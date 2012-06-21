@@ -18,6 +18,6 @@ rake test
 
 If you want to discuss potential contributions feel free to contact me.
 
-*Contact details:*
-@reallycare_mark
+*Contact details:*<br />
+@reallycare_mark<br />
 support.reallycare.org
