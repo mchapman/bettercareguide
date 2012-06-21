@@ -1,0 +1,10 @@
+<p><%= @greeting %></p>
+
+<p>Thank you very much for taking the time to rate the <%= @rating.service.organisation.name %> service.</p>
+
+<p>The rating has now been published on our site and you can see it if you
+<%= link_to 'follow this link', service_url(@rating.service) %></p>
+
+<p>If you have any problems please visit our support site at http://support.reallycare.org.</p>
+
+<p><%= EMAIL_SIG %></p>

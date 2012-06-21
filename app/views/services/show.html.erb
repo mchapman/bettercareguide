@@ -1,0 +1,153 @@
+<%= render :partial => 'layouts/pictures' %>
+<div class="span10" itemscope itemtype="http://schema.org/LocalBusiness">
+  <h1 itemprop="name"><%= @service.organisation.name %></h1>
+
+  <div class="row">
+    <div class="span4">
+      <h3><%= @service.internal_service_type.description %></h3>
+      <% if @service.elevator_pitch.blank? %> 
+        <br />
+      <% else %>
+        <div class="well" itemprop="description">
+          <%= @service.elevator_pitch %>
+        </div>
+      <% end %>
+      <% if @service.organisation.registered_address %>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <% AddressesHelper.base_field_names.each do |att_name| %>
+          <% unless @service.organisation.registered_address.attributes[att_name].blank? %>
+            <%= @service.organisation.registered_address.attributes[att_name] %>
+            <br/>
+          <% end %>
+        <% end %>
+        </div>
+      <% end %>
+      <br/>
+      <% @service.organisation.phones.where("address_type_id = 1 and number is not null and number <> ''").order(:phone_type_id).each do |phone| %>
+        <%= PhoneType.find(phone.phone_type_id).description %> <span  itemprop="telephone"><%= phone.number %></span>
+        <br/>
+      <% end %>
+      <br/>
+      <% if @service.organisation.url and @service.organisation.url.length > 6 %>
+        <a  itemprop="url" href="<%= prepare_link(@service.organisation.url) %>" target="_blank" rel="nofollow"><i class="icon-home"></i>&nbsp;<%= @service.organisation.url %></a><br />
+      <% end %>
+
+      <% if @service.regulator_given_id %>
+        Regulated by 
+        <% if @service.current_registration.regulator.web_page_format =~ /\%/ %>
+          <%= @service.current_registration.regulator.description %> <%= link_to "(view report)", sprintf(@service.current_registration.regulator.web_page_format, @service.regulator_given_id), {:target => "_blank"} %>
+        <% else %>
+          <%= link_to @service.current_registration.regulator.description, @service.current_registration.regulator.web_page_format, {:target => "_blank"} %>
+        <% end %><br />
+      <% end %>
+      <% if @service.organisation.internal_sector_type && @service.organisation.internal_sector_type.description != 'Unknown' %>
+        <%= @service.organisation.internal_sector_type.description %> Sector <br />
+      <% end %>
+      <% if @service.capacity and @service.capacity > 0 %>
+        Capacity <%= @service.capacity %> </br />
+      <% end %>
+      <% if @comments %>
+        <% if @long_desc.blank? %>
+          <%= render :partial => 'map' %>
+        <% else %>
+          <hr>
+          <%= @long_desc %>
+        <% end %>
+      <% elsif not @long_desc.blank?  %>
+        <%= render :partial => 'map' %>
+      <% end %>
+    </div>
+    <div class="span6">
+      <% if @comments == nil %>
+        <div id="current-rating" style="margin-top: 8px;">
+          Nobody has rated this service yet.
+          <% if can? :update, @service %>
+            To be notified when anyone does <%= link_to 'update', edit_service_path(@service) %> the record and visit the
+            Users page.
+          <% elsif user_signed_in? and @service.needs_access_code_from_user(current_user) %>
+            Once you have entered your access code you will be able to set up the record so you are sent an email when
+            somebody does.
+          <% else %>
+            To be the first click <%= link_to 'here', rate_service_url(@service) %>
+          <% end %>
+        </div>
+        <% if @long_desc.blank? %>
+          <br />
+          <%= render :partial => 'map' %>
+        <% else %>
+          <hr>
+          <%= @long_desc %>
+        <% end %>
+      <% else %>
+        <% unless @long_desc.blank? %>
+          <%= render :partial => 'map' %>
+        <% end %>
+        <div id="rating-section" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+          <meta itemprop="ratingValue" content="<%= (@service.cached_rating / 20) %>" />
+          <div class="pull-left"><h3>Rating:&nbsp;&nbsp;</h3></div>
+          <div class="pull-left" id="current-rating" style="margin-top: 8px;">
+            <div class="rating service-rating pull-left">
+              <div style=<%= raw(sprintf('"width:%d%%"', @service.cached_rating)) %>>
+              </div>
+            </div>
+            <div class="pull-left"  style="margin: -3px 3px 0 3px">(based on <span itemprop="reviewCount"><%= @service.no_comments %></span> <%= @service.no_comments > 1 ? 'reviews)' : 'review)' %></div>
+          </div>
+          <% if cannot? :update, @service %>
+            <div class="pull-left" style="margin: 6px 0 0 18px;">
+              <%= link_to 'Rate this service', rate_service_url(@service) %>
+            </div>
+          <% end %>
+        </div>
+        <br />
+        <br />
+        <div id="rating-hist">
+          <% @comments.each do |rating| %>
+            <%= render :partial => "shared/ratings_preview", :locals => {:rating => rating, :max_span => 4} %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span10 form-actions">
+      <% if can? :update, @service %>
+        <%= link_to 'Update', edit_service_path(@service), :rel => 'nofollow' %>
+      <% elsif user_signed_in? and @service.needs_access_code_from_user(current_user) %>
+        <%= link_to 'Enter Access Code', enter_code_path(@service.access_code_for_user(current_user)), :rel => 'nofollow' %>
+        <%= link_to 'Request another Access Code', claim_path(@service), :rel => 'nofollow' %>
+      <% else %>
+        <%= link_to 'Rate this service', rate_service_url(@service), :rel => 'nofollow' %>
+        <br/>
+        <%= link_to 'Click here if you represent this service', claim_path(@service), :rel => 'nofollow' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+function initialize() {
+  var myLatLng = new google.maps.LatLng(<%= @service.organisation.registered_address.lat %>, <%= @service.organisation.registered_address.lng %>);
+  var myOptions = {
+    center: myLatLng,
+    zoom: 13,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: "<%= @service.organisation.name %>"
+  });
+};
+
+function loadScript() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize&region=GB';
+document.body.appendChild(script);
+}
+
+window.onload = loadScript;
+</script>

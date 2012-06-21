@@ -1,0 +1,1653 @@
+--- 
+regulator_scores_001: 
+  id: "1"
+  regulator_description: Excellent
+  internal_regulator_score_id: "1"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:43.329128
+  updated_at: 2010-09-27 19:48:43.329128
+regulator_scores_002: 
+  id: "2"
+  regulator_description: Good
+  internal_regulator_score_id: "2"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:43.395023
+  updated_at: 2010-09-27 19:48:43.395023
+regulator_scores_003: 
+  id: "3"
+  regulator_description: Adequate
+  internal_regulator_score_id: "3"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:43.558623
+  updated_at: 2010-09-27 19:48:43.558623
+regulator_scores_004: 
+  id: "4"
+  regulator_description: Not Yet Rated
+  internal_regulator_score_id: "4"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:45.078904
+  updated_at: 2010-09-27 19:48:45.078904
+regulator_scores_005: 
+  id: "5"
+  regulator_description: Poor
+  internal_regulator_score_id: "5"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:47.398936
+  updated_at: 2010-09-27 19:48:47.398936
+regulator_scores_006: 
+  id: "6"
+  regulator_description: Suspended Rating
+  internal_regulator_score_id: "6"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:50:44.395187
+  updated_at: 2010-09-27 19:50:44.395187
+regulator_scores_007: 
+  id: "7"
+  regulator_description: See Report
+  internal_regulator_score_id: "7"
+  regulator_id: "3"
+  created_at: 2010-09-27 20:04:28.019377
+  updated_at: 2010-09-27 20:04:28.019377
+regulator_scores_008: 
+  id: "8"
+  regulator_description: "4443"
+  internal_regulator_score_id: "8"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.446392
+  updated_at: 2010-09-30 23:45:19.446392
+regulator_scores_009: 
+  id: "9"
+  regulator_description: "5544"
+  internal_regulator_score_id: "9"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.497187
+  updated_at: 2010-09-30 23:45:19.497187
+regulator_scores_010: 
+  id: "10"
+  regulator_description: "5555"
+  internal_regulator_score_id: "10"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.545856
+  updated_at: 2010-09-30 23:45:19.545856
+regulator_scores_011: 
+  id: "11"
+  regulator_description: "2343"
+  internal_regulator_score_id: "11"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.589776
+  updated_at: 2010-09-30 23:45:19.589776
+regulator_scores_012: 
+  id: "12"
+  regulator_description: "4444"
+  internal_regulator_score_id: "12"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.681263
+  updated_at: 2010-09-30 23:45:19.681263
+regulator_scores_013: 
+  id: "13"
+  regulator_description: "4434"
+  internal_regulator_score_id: "13"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.740915
+  updated_at: 2010-09-30 23:45:19.740915
+regulator_scores_014: 
+  id: "14"
+  regulator_description: "4454"
+  internal_regulator_score_id: "14"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.881216
+  updated_at: 2010-09-30 23:45:19.881216
+regulator_scores_015: 
+  id: "15"
+  regulator_description: "4544"
+  internal_regulator_score_id: "15"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.248126
+  updated_at: 2010-09-30 23:45:20.248126
+regulator_scores_016: 
+  id: "16"
+  regulator_description: "3333"
+  internal_regulator_score_id: "16"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.286825
+  updated_at: 2010-09-30 23:45:20.286825
+regulator_scores_017: 
+  id: "17"
+  regulator_description: "2344"
+  internal_regulator_score_id: "17"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.336072
+  updated_at: 2010-09-30 23:45:20.336072
+regulator_scores_018: 
+  id: "18"
+  regulator_description: "4433"
+  internal_regulator_score_id: "18"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.479627
+  updated_at: 2010-09-30 23:45:20.479627
+regulator_scores_019: 
+  id: "19"
+  regulator_description: "5455"
+  internal_regulator_score_id: "19"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.524502
+  updated_at: 2010-09-30 23:45:20.524502
+regulator_scores_020: 
+  id: "20"
+  regulator_description: "4445"
+  internal_regulator_score_id: "20"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.696598
+  updated_at: 2010-09-30 23:45:20.696598
+regulator_scores_021: 
+  id: "21"
+  regulator_description: "3343"
+  internal_regulator_score_id: "21"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.8791
+  updated_at: 2010-09-30 23:45:20.8791
+regulator_scores_022: 
+  id: "22"
+  regulator_description: "4343"
+  internal_regulator_score_id: "22"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.275013
+  updated_at: 2010-09-30 23:45:21.275013
+regulator_scores_023: 
+  id: "23"
+  regulator_description: "3453"
+  internal_regulator_score_id: "23"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.315225
+  updated_at: 2010-09-30 23:45:21.315225
+regulator_scores_024: 
+  id: "24"
+  regulator_description: "4344"
+  internal_regulator_score_id: "24"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.357566
+  updated_at: 2010-09-30 23:45:21.357566
+regulator_scores_025: 
+  id: "25"
+  regulator_description: "5444"
+  internal_regulator_score_id: "25"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.450351
+  updated_at: 2010-09-30 23:45:21.450351
+regulator_scores_026: 
+  id: "26"
+  regulator_description: "5443"
+  internal_regulator_score_id: "26"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.508749
+  updated_at: 2010-09-30 23:45:21.508749
+regulator_scores_027: 
+  id: "27"
+  regulator_description: 55NN
+  internal_regulator_score_id: "27"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.550597
+  updated_at: 2010-09-30 23:45:21.550597
+regulator_scores_028: 
+  id: "28"
+  regulator_description: "2321"
+  internal_regulator_score_id: "28"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.781718
+  updated_at: 2010-09-30 23:45:21.781718
+regulator_scores_029: 
+  id: "29"
+  regulator_description: "5454"
+  internal_regulator_score_id: "29"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:21.935345
+  updated_at: 2010-09-30 23:45:21.935345
+regulator_scores_030: 
+  id: "30"
+  regulator_description: "3433"
+  internal_regulator_score_id: "30"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:22.004005
+  updated_at: 2010-09-30 23:45:22.004005
+regulator_scores_031: 
+  id: "31"
+  regulator_description: "4244"
+  internal_regulator_score_id: "31"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:22.060064
+  updated_at: 2010-09-30 23:45:22.060064
+regulator_scores_032: 
+  id: "32"
+  regulator_description: "6555"
+  internal_regulator_score_id: "32"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:22.43704
+  updated_at: 2010-09-30 23:45:22.43704
+regulator_scores_033: 
+  id: "33"
+  regulator_description: "4333"
+  internal_regulator_score_id: "33"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:22.783356
+  updated_at: 2010-09-30 23:45:22.783356
+regulator_scores_034: 
+  id: "34"
+  regulator_description: "5543"
+  internal_regulator_score_id: "34"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:22.898154
+  updated_at: 2010-09-30 23:45:22.898154
+regulator_scores_035: 
+  id: "35"
+  regulator_description: "4233"
+  internal_regulator_score_id: "35"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:23.470687
+  updated_at: 2010-09-30 23:45:23.470687
+regulator_scores_036: 
+  id: "36"
+  regulator_description: "5554"
+  internal_regulator_score_id: "36"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:24.401299
+  updated_at: 2010-09-30 23:45:24.401299
+regulator_scores_037: 
+  id: "37"
+  regulator_description: "3444"
+  internal_regulator_score_id: "37"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:24.434919
+  updated_at: 2010-09-30 23:45:24.434919
+regulator_scores_038: 
+  id: "38"
+  regulator_description: "2333"
+  internal_regulator_score_id: "38"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:24.960985
+  updated_at: 2010-09-30 23:45:24.960985
+regulator_scores_039: 
+  id: "39"
+  regulator_description: "2322"
+  internal_regulator_score_id: "39"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:25.67053
+  updated_at: 2010-09-30 23:45:25.67053
+regulator_scores_040: 
+  id: "40"
+  regulator_description: "4533"
+  internal_regulator_score_id: "40"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:25.91174
+  updated_at: 2010-09-30 23:45:25.91174
+regulator_scores_041: 
+  id: "41"
+  regulator_description: "2232"
+  internal_regulator_score_id: "41"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:26.711069
+  updated_at: 2010-09-30 23:45:26.711069
+regulator_scores_042: 
+  id: "42"
+  regulator_description: 5NNN
+  internal_regulator_score_id: "42"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:26.783881
+  updated_at: 2010-09-30 23:45:26.783881
+regulator_scores_043: 
+  id: "43"
+  regulator_description: "2222"
+  internal_regulator_score_id: "43"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:27.148907
+  updated_at: 2010-09-30 23:45:27.148907
+regulator_scores_044: 
+  id: "44"
+  regulator_description: "3233"
+  internal_regulator_score_id: "44"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:27.277229
+  updated_at: 2010-09-30 23:45:27.277229
+regulator_scores_045: 
+  id: "45"
+  regulator_description: "5354"
+  internal_regulator_score_id: "45"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:27.727367
+  updated_at: 2010-09-30 23:45:27.727367
+regulator_scores_046: 
+  id: "46"
+  regulator_description: "4243"
+  internal_regulator_score_id: "46"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:27.827267
+  updated_at: 2010-09-30 23:45:27.827267
+regulator_scores_047: 
+  id: "47"
+  regulator_description: "2233"
+  internal_regulator_score_id: "47"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:27.934363
+  updated_at: 2010-09-30 23:45:27.934363
+regulator_scores_048: 
+  id: "48"
+  regulator_description: "5655"
+  internal_regulator_score_id: "48"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:28.986099
+  updated_at: 2010-09-30 23:45:28.986099
+regulator_scores_049: 
+  id: "49"
+  regulator_description: "4555"
+  internal_regulator_score_id: "49"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:29.80247
+  updated_at: 2010-09-30 23:45:29.80247
+regulator_scores_050: 
+  id: "50"
+  regulator_description: "3322"
+  internal_regulator_score_id: "50"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:29.849764
+  updated_at: 2010-09-30 23:45:29.849764
+regulator_scores_051: 
+  id: "51"
+  regulator_description: "4455"
+  internal_regulator_score_id: "51"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:30.074581
+  updated_at: 2010-09-30 23:45:30.074581
+regulator_scores_052: 
+  id: "52"
+  regulator_description: "5545"
+  internal_regulator_score_id: "52"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:30.426887
+  updated_at: 2010-09-30 23:45:30.426887
+regulator_scores_053: 
+  id: "53"
+  regulator_description: "4554"
+  internal_regulator_score_id: "53"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:30.85115
+  updated_at: 2010-09-30 23:45:30.85115
+regulator_scores_054: 
+  id: "54"
+  regulator_description: "3332"
+  internal_regulator_score_id: "54"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:30.958107
+  updated_at: 2010-09-30 23:45:30.958107
+regulator_scores_055: 
+  id: "55"
+  regulator_description: "2423"
+  internal_regulator_score_id: "55"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:31.025835
+  updated_at: 2010-09-30 23:45:31.025835
+regulator_scores_056: 
+  id: "56"
+  regulator_description: "6544"
+  internal_regulator_score_id: "56"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:31.227359
+  updated_at: 2010-09-30 23:45:31.227359
+regulator_scores_057: 
+  id: "57"
+  regulator_description: "6456"
+  internal_regulator_score_id: "57"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:31.375006
+  updated_at: 2010-09-30 23:45:31.375006
+regulator_scores_058: 
+  id: "58"
+  regulator_description: "3344"
+  internal_regulator_score_id: "58"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:31.749607
+  updated_at: 2010-09-30 23:45:31.749607
+regulator_scores_059: 
+  id: "59"
+  regulator_description: 45NN
+  internal_regulator_score_id: "59"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:31.920493
+  updated_at: 2010-09-30 23:45:31.920493
+regulator_scores_060: 
+  id: "60"
+  regulator_description: "2444"
+  internal_regulator_score_id: "60"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:32.122222
+  updated_at: 2010-09-30 23:45:32.122222
+regulator_scores_061: 
+  id: "61"
+  regulator_description: "5345"
+  internal_regulator_score_id: "61"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:32.446857
+  updated_at: 2010-09-30 23:45:32.446857
+regulator_scores_062: 
+  id: "62"
+  regulator_description: 43NN
+  internal_regulator_score_id: "62"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:32.555933
+  updated_at: 2010-09-30 23:45:32.555933
+regulator_scores_063: 
+  id: "63"
+  regulator_description: "3244"
+  internal_regulator_score_id: "63"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:34.321145
+  updated_at: 2010-09-30 23:45:34.321145
+regulator_scores_064: 
+  id: "64"
+  regulator_description: "5445"
+  internal_regulator_score_id: "64"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:34.561146
+  updated_at: 2010-09-30 23:45:34.561146
+regulator_scores_065: 
+  id: "65"
+  regulator_description: "4222"
+  internal_regulator_score_id: "65"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:34.813645
+  updated_at: 2010-09-30 23:45:34.813645
+regulator_scores_066: 
+  id: "66"
+  regulator_description: 4NNN
+  internal_regulator_score_id: "66"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:34.985384
+  updated_at: 2010-09-30 23:45:34.985384
+regulator_scores_067: 
+  id: "67"
+  regulator_description: "4424"
+  internal_regulator_score_id: "67"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:35.516658
+  updated_at: 2010-09-30 23:45:35.516658
+regulator_scores_068: 
+  id: "68"
+  regulator_description: No Data
+  internal_regulator_score_id: "68"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:35.586166
+  updated_at: 2010-09-30 23:45:35.586166
+regulator_scores_069: 
+  id: "69"
+  regulator_description: "3223"
+  internal_regulator_score_id: "69"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:35.897872
+  updated_at: 2010-09-30 23:45:35.897872
+regulator_scores_070: 
+  id: "70"
+  regulator_description: "3243"
+  internal_regulator_score_id: "70"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:36.057092
+  updated_at: 2010-09-30 23:45:36.057092
+regulator_scores_071: 
+  id: "71"
+  regulator_description: 4N4N
+  internal_regulator_score_id: "71"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:36.963252
+  updated_at: 2010-09-30 23:45:36.963252
+regulator_scores_072: 
+  id: "72"
+  regulator_description: 54NN
+  internal_regulator_score_id: "72"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:37.136657
+  updated_at: 2010-09-30 23:45:37.136657
+regulator_scores_073: 
+  id: "73"
+  regulator_description: "3434"
+  internal_regulator_score_id: "73"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:38.398803
+  updated_at: 2010-09-30 23:45:38.398803
+regulator_scores_074: 
+  id: "74"
+  regulator_description: "6565"
+  internal_regulator_score_id: "74"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:39.80876
+  updated_at: 2010-09-30 23:45:39.80876
+regulator_scores_075: 
+  id: "75"
+  regulator_description: 2NN1
+  internal_regulator_score_id: "75"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:40.736603
+  updated_at: 2010-09-30 23:45:40.736603
+regulator_scores_076: 
+  id: "76"
+  regulator_description: "4334"
+  internal_regulator_score_id: "76"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:40.957
+  updated_at: 2010-09-30 23:45:40.957
+regulator_scores_077: 
+  id: "77"
+  regulator_description: N4N4
+  internal_regulator_score_id: "77"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:41.653355
+  updated_at: 2010-09-30 23:45:41.653355
+regulator_scores_078: 
+  id: "78"
+  regulator_description: "3222"
+  internal_regulator_score_id: "78"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:42.889706
+  updated_at: 2010-09-30 23:45:42.889706
+regulator_scores_079: 
+  id: "79"
+  regulator_description: "5344"
+  internal_regulator_score_id: "79"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:43.252615
+  updated_at: 2010-09-30 23:45:43.252615
+regulator_scores_080: 
+  id: "80"
+  regulator_description: "4323"
+  internal_regulator_score_id: "80"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:43.489509
+  updated_at: 2010-09-30 23:45:43.489509
+regulator_scores_081: 
+  id: "81"
+  regulator_description: "3334"
+  internal_regulator_score_id: "81"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:44.910858
+  updated_at: 2010-09-30 23:45:44.910858
+regulator_scores_082: 
+  id: "82"
+  regulator_description: "4543"
+  internal_regulator_score_id: "82"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:45.25458
+  updated_at: 2010-09-30 23:45:45.25458
+regulator_scores_083: 
+  id: "83"
+  regulator_description: "3443"
+  internal_regulator_score_id: "83"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:47.298216
+  updated_at: 2010-09-30 23:45:47.298216
+regulator_scores_084: 
+  id: "84"
+  regulator_description: "6566"
+  internal_regulator_score_id: "84"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:47.648823
+  updated_at: 2010-09-30 23:45:47.648823
+regulator_scores_085: 
+  id: "85"
+  regulator_description: NN22
+  internal_regulator_score_id: "85"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:50.106646
+  updated_at: 2010-09-30 23:45:50.106646
+regulator_scores_086: 
+  id: "86"
+  regulator_description: "2332"
+  internal_regulator_score_id: "86"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:50.186151
+  updated_at: 2010-09-30 23:45:50.186151
+regulator_scores_087: 
+  id: "87"
+  regulator_description: "4242"
+  internal_regulator_score_id: "87"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:51.472456
+  updated_at: 2010-09-30 23:45:51.472456
+regulator_scores_088: 
+  id: "88"
+  regulator_description: "2544"
+  internal_regulator_score_id: "88"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:53.435198
+  updated_at: 2010-09-30 23:45:53.435198
+regulator_scores_089: 
+  id: "89"
+  regulator_description: "3234"
+  internal_regulator_score_id: "89"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:54.036233
+  updated_at: 2010-09-30 23:45:54.036233
+regulator_scores_090: 
+  id: "90"
+  regulator_description: "2443"
+  internal_regulator_score_id: "90"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:56.397004
+  updated_at: 2010-09-30 23:45:56.397004
+regulator_scores_091: 
+  id: "91"
+  regulator_description: 44NN
+  internal_regulator_score_id: "91"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:56.763367
+  updated_at: 2010-09-30 23:45:56.763367
+regulator_scores_092: 
+  id: "92"
+  regulator_description: "5666"
+  internal_regulator_score_id: "92"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:57.421275
+  updated_at: 2010-09-30 23:45:57.421275
+regulator_scores_093: 
+  id: "93"
+  regulator_description: "5255"
+  internal_regulator_score_id: "93"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:05.073364
+  updated_at: 2010-09-30 23:46:05.073364
+regulator_scores_094: 
+  id: "94"
+  regulator_description: "5524"
+  internal_regulator_score_id: "94"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:05.398633
+  updated_at: 2010-09-30 23:46:05.398633
+regulator_scores_095: 
+  id: "95"
+  regulator_description: "6666"
+  internal_regulator_score_id: "95"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:05.91698
+  updated_at: 2010-09-30 23:46:05.91698
+regulator_scores_096: 
+  id: "96"
+  regulator_description: "5343"
+  internal_regulator_score_id: "96"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:06.801707
+  updated_at: 2010-09-30 23:46:06.801707
+regulator_scores_097: 
+  id: "97"
+  regulator_description: "2243"
+  internal_regulator_score_id: "97"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:07.528942
+  updated_at: 2010-09-30 23:46:07.528942
+regulator_scores_098: 
+  id: "98"
+  regulator_description: 4N5N
+  internal_regulator_score_id: "98"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:07.976298
+  updated_at: 2010-09-30 23:46:07.976298
+regulator_scores_099: 
+  id: "99"
+  regulator_description: "4254"
+  internal_regulator_score_id: "99"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:08.252504
+  updated_at: 2010-09-30 23:46:08.252504
+regulator_scores_100: 
+  id: "100"
+  regulator_description: "4435"
+  internal_regulator_score_id: "100"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:09.987537
+  updated_at: 2010-09-30 23:46:09.987537
+regulator_scores_101: 
+  id: "101"
+  regulator_description: "1232"
+  internal_regulator_score_id: "101"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:10.05089
+  updated_at: 2010-09-30 23:46:10.05089
+regulator_scores_102: 
+  id: "102"
+  regulator_description: 44N4
+  internal_regulator_score_id: "102"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:10.266588
+  updated_at: 2010-09-30 23:46:10.266588
+regulator_scores_103: 
+  id: "103"
+  regulator_description: "2323"
+  internal_regulator_score_id: "103"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:10.488535
+  updated_at: 2010-09-30 23:46:10.488535
+regulator_scores_104: 
+  id: "104"
+  regulator_description: 55N5
+  internal_regulator_score_id: "104"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:12.44152
+  updated_at: 2010-09-30 23:46:12.44152
+regulator_scores_105: 
+  id: "105"
+  regulator_description: 34N3
+  internal_regulator_score_id: "105"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:14.118566
+  updated_at: 2010-09-30 23:46:14.118566
+regulator_scores_106: 
+  id: "106"
+  regulator_description: N5N5
+  internal_regulator_score_id: "106"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:15.886271
+  updated_at: 2010-09-30 23:46:15.886271
+regulator_scores_107: 
+  id: "107"
+  regulator_description: "3432"
+  internal_regulator_score_id: "107"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:16.180486
+  updated_at: 2010-09-30 23:46:16.180486
+regulator_scores_108: 
+  id: "108"
+  regulator_description: "2324"
+  internal_regulator_score_id: "108"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:18.624093
+  updated_at: 2010-09-30 23:46:18.624093
+regulator_scores_109: 
+  id: "109"
+  regulator_description: "3323"
+  internal_regulator_score_id: "109"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:18.733616
+  updated_at: 2010-09-30 23:46:18.733616
+regulator_scores_110: 
+  id: "110"
+  regulator_description: 33N4
+  internal_regulator_score_id: "110"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:19.656275
+  updated_at: 2010-09-30 23:46:19.656275
+regulator_scores_111: 
+  id: "111"
+  regulator_description: "5646"
+  internal_regulator_score_id: "111"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:20.14016
+  updated_at: 2010-09-30 23:46:20.14016
+regulator_scores_112: 
+  id: "112"
+  regulator_description: "2211"
+  internal_regulator_score_id: "112"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:22.184556
+  updated_at: 2010-09-30 23:46:22.184556
+regulator_scores_113: 
+  id: "113"
+  regulator_description: "5565"
+  internal_regulator_score_id: "113"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:22.330079
+  updated_at: 2010-09-30 23:46:22.330079
+regulator_scores_114: 
+  id: "114"
+  regulator_description: "2212"
+  internal_regulator_score_id: "114"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:22.929396
+  updated_at: 2010-09-30 23:46:22.929396
+regulator_scores_115: 
+  id: "115"
+  regulator_description: "5645"
+  internal_regulator_score_id: "115"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:23.024955
+  updated_at: 2010-09-30 23:46:23.024955
+regulator_scores_116: 
+  id: "116"
+  regulator_description: "2223"
+  internal_regulator_score_id: "116"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:24.186392
+  updated_at: 2010-09-30 23:46:24.186392
+regulator_scores_117: 
+  id: "117"
+  regulator_description: 22N2
+  internal_regulator_score_id: "117"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:25.495117
+  updated_at: 2010-09-30 23:46:25.495117
+regulator_scores_118: 
+  id: "118"
+  regulator_description: "4224"
+  internal_regulator_score_id: "118"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:25.686235
+  updated_at: 2010-09-30 23:46:25.686235
+regulator_scores_119: 
+  id: "119"
+  regulator_description: "3242"
+  internal_regulator_score_id: "119"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:26.629363
+  updated_at: 2010-09-30 23:46:26.629363
+regulator_scores_120: 
+  id: "120"
+  regulator_description: "4422"
+  internal_regulator_score_id: "120"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:27.014137
+  updated_at: 2010-09-30 23:46:27.014137
+regulator_scores_121: 
+  id: "121"
+  regulator_description: 4NN4
+  internal_regulator_score_id: "121"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:30.003537
+  updated_at: 2010-09-30 23:46:30.003537
+regulator_scores_122: 
+  id: "122"
+  regulator_description: "4545"
+  internal_regulator_score_id: "122"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:30.321705
+  updated_at: 2010-09-30 23:46:30.321705
+regulator_scores_123: 
+  id: "123"
+  regulator_description: "4354"
+  internal_regulator_score_id: "123"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:31.410506
+  updated_at: 2010-09-30 23:46:31.410506
+regulator_scores_124: 
+  id: "124"
+  regulator_description: "3133"
+  internal_regulator_score_id: "124"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:31.94966
+  updated_at: 2010-09-30 23:46:31.94966
+regulator_scores_125: 
+  id: "125"
+  regulator_description: "4423"
+  internal_regulator_score_id: "125"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:34.591845
+  updated_at: 2010-09-30 23:46:34.591845
+regulator_scores_126: 
+  id: "126"
+  regulator_description: "5566"
+  internal_regulator_score_id: "126"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:36.403784
+  updated_at: 2010-09-30 23:46:36.403784
+regulator_scores_127: 
+  id: "127"
+  regulator_description: "3422"
+  internal_regulator_score_id: "127"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:37.919186
+  updated_at: 2010-09-30 23:46:37.919186
+regulator_scores_128: 
+  id: "128"
+  regulator_description: "4313"
+  internal_regulator_score_id: "128"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:44.971387
+  updated_at: 2010-09-30 23:46:44.971387
+regulator_scores_129: 
+  id: "129"
+  regulator_description: 44N5
+  internal_regulator_score_id: "129"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:46.164628
+  updated_at: 2010-09-30 23:46:46.164628
+regulator_scores_130: 
+  id: "130"
+  regulator_description: 34N4
+  internal_regulator_score_id: "130"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:46.278254
+  updated_at: 2010-09-30 23:46:46.278254
+regulator_scores_131: 
+  id: "131"
+  regulator_description: 33NN
+  internal_regulator_score_id: "131"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:47.857152
+  updated_at: 2010-09-30 23:46:47.857152
+regulator_scores_132: 
+  id: "132"
+  regulator_description: 45N6
+  internal_regulator_score_id: "132"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:47.998664
+  updated_at: 2010-09-30 23:46:47.998664
+regulator_scores_133: 
+  id: "133"
+  regulator_description: "6655"
+  internal_regulator_score_id: "133"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:49.563605
+  updated_at: 2010-09-30 23:46:49.563605
+regulator_scores_134: 
+  id: "134"
+  regulator_description: "4442"
+  internal_regulator_score_id: "134"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:50.167936
+  updated_at: 2010-09-30 23:46:50.167936
+regulator_scores_135: 
+  id: "135"
+  regulator_description: "6464"
+  internal_regulator_score_id: "135"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:51.951983
+  updated_at: 2010-09-30 23:46:51.951983
+regulator_scores_136: 
+  id: "136"
+  regulator_description: "6554"
+  internal_regulator_score_id: "136"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:52.792445
+  updated_at: 2010-09-30 23:46:52.792445
+regulator_scores_137: 
+  id: "137"
+  regulator_description: "4453"
+  internal_regulator_score_id: "137"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:53.505199
+  updated_at: 2010-09-30 23:46:53.505199
+regulator_scores_138: 
+  id: "138"
+  regulator_description: 4N54
+  internal_regulator_score_id: "138"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:54.757503
+  updated_at: 2010-09-30 23:46:54.757503
+regulator_scores_139: 
+  id: "139"
+  regulator_description: 5N4N
+  internal_regulator_score_id: "139"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:55.925947
+  updated_at: 2010-09-30 23:46:55.925947
+regulator_scores_140: 
+  id: "140"
+  regulator_description: "5556"
+  internal_regulator_score_id: "140"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:58.390475
+  updated_at: 2010-09-30 23:46:58.390475
+regulator_scores_141: 
+  id: "141"
+  regulator_description: "4353"
+  internal_regulator_score_id: "141"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:00.46065
+  updated_at: 2010-09-30 23:47:00.46065
+regulator_scores_142: 
+  id: "142"
+  regulator_description: 5N5N
+  internal_regulator_score_id: "142"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:01.121307
+  updated_at: 2010-09-30 23:47:01.121307
+regulator_scores_143: 
+  id: "143"
+  regulator_description: 234N
+  internal_regulator_score_id: "143"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:02.664176
+  updated_at: 2010-09-30 23:47:02.664176
+regulator_scores_144: 
+  id: "144"
+  regulator_description: "3442"
+  internal_regulator_score_id: "144"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:04.123426
+  updated_at: 2010-09-30 23:47:04.123426
+regulator_scores_145: 
+  id: "145"
+  regulator_description: "3423"
+  internal_regulator_score_id: "145"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:04.17584
+  updated_at: 2010-09-30 23:47:04.17584
+regulator_scores_146: 
+  id: "146"
+  regulator_description: 4N33
+  internal_regulator_score_id: "146"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:04.550319
+  updated_at: 2010-09-30 23:47:04.550319
+regulator_scores_147: 
+  id: "147"
+  regulator_description: 3N33
+  internal_regulator_score_id: "147"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:04.649545
+  updated_at: 2010-09-30 23:47:04.649545
+regulator_scores_148: 
+  id: "148"
+  regulator_description: "3345"
+  internal_regulator_score_id: "148"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:05.818683
+  updated_at: 2010-09-30 23:47:05.818683
+regulator_scores_149: 
+  id: "149"
+  regulator_description: 4N44
+  internal_regulator_score_id: "149"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:06.223042
+  updated_at: 2010-09-30 23:47:06.223042
+regulator_scores_150: 
+  id: "150"
+  regulator_description: 5N44
+  internal_regulator_score_id: "150"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:08.679808
+  updated_at: 2010-09-30 23:47:08.679808
+regulator_scores_151: 
+  id: "151"
+  regulator_description: "4332"
+  internal_regulator_score_id: "151"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:08.768217
+  updated_at: 2010-09-30 23:47:08.768217
+regulator_scores_152: 
+  id: "152"
+  regulator_description: "5254"
+  internal_regulator_score_id: "152"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:09.313011
+  updated_at: 2010-09-30 23:47:09.313011
+regulator_scores_153: 
+  id: "153"
+  regulator_description: 6N55
+  internal_regulator_score_id: "153"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:09.438744
+  updated_at: 2010-09-30 23:47:09.438744
+regulator_scores_154: 
+  id: "154"
+  regulator_description: 5N55
+  internal_regulator_score_id: "154"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:09.527268
+  updated_at: 2010-09-30 23:47:09.527268
+regulator_scores_155: 
+  id: "155"
+  regulator_description: 5N56
+  internal_regulator_score_id: "155"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:09.963878
+  updated_at: 2010-09-30 23:47:09.963878
+regulator_scores_156: 
+  id: "156"
+  regulator_description: 3N34
+  internal_regulator_score_id: "156"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:10.390595
+  updated_at: 2010-09-30 23:47:10.390595
+regulator_scores_157: 
+  id: "157"
+  regulator_description: 5N54
+  internal_regulator_score_id: "157"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:10.533027
+  updated_at: 2010-09-30 23:47:10.533027
+regulator_scores_158: 
+  id: "158"
+  regulator_description: 6N45
+  internal_regulator_score_id: "158"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:10.890117
+  updated_at: 2010-09-30 23:47:10.890117
+regulator_scores_159: 
+  id: "159"
+  regulator_description: 6N65
+  internal_regulator_score_id: "159"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:11.397087
+  updated_at: 2010-09-30 23:47:11.397087
+regulator_scores_160: 
+  id: "160"
+  regulator_description: 5N34
+  internal_regulator_score_id: "160"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:11.643351
+  updated_at: 2010-09-30 23:47:11.643351
+regulator_scores_161: 
+  id: "161"
+  regulator_description: 4N43
+  internal_regulator_score_id: "161"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:11.809028
+  updated_at: 2010-09-30 23:47:11.809028
+regulator_scores_162: 
+  id: "162"
+  regulator_description: 5N45
+  internal_regulator_score_id: "162"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:12.294709
+  updated_at: 2010-09-30 23:47:12.294709
+regulator_scores_163: 
+  id: "163"
+  regulator_description: 5N65
+  internal_regulator_score_id: "163"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:12.438377
+  updated_at: 2010-09-30 23:47:12.438377
+regulator_scores_164: 
+  id: "164"
+  regulator_description: 4N34
+  internal_regulator_score_id: "164"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:13.195247
+  updated_at: 2010-09-30 23:47:13.195247
+regulator_scores_165: 
+  id: "165"
+  regulator_description: 6N56
+  internal_regulator_score_id: "165"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:13.850618
+  updated_at: 2010-09-30 23:47:13.850618
+regulator_scores_166: 
+  id: "166"
+  regulator_description: 2N22
+  internal_regulator_score_id: "166"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:14.094326
+  updated_at: 2010-09-30 23:47:14.094326
+regulator_scores_167: 
+  id: "167"
+  regulator_description: 4N55
+  internal_regulator_score_id: "167"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:15.697847
+  updated_at: 2010-09-30 23:47:15.697847
+regulator_scores_168: 
+  id: "168"
+  regulator_description: 4N32
+  internal_regulator_score_id: "168"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:16.214855
+  updated_at: 2010-09-30 23:47:16.214855
+regulator_scores_169: 
+  id: "169"
+  regulator_description: 2N32
+  internal_regulator_score_id: "169"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:18.588207
+  updated_at: 2010-09-30 23:47:18.588207
+regulator_scores_170: 
+  id: "170"
+  regulator_description: 2N34
+  internal_regulator_score_id: "170"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:19.073349
+  updated_at: 2010-09-30 23:47:19.073349
+regulator_scores_171: 
+  id: "171"
+  regulator_description: 5N33
+  internal_regulator_score_id: "171"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:20.578097
+  updated_at: 2010-09-30 23:47:20.578097
+regulator_scores_172: 
+  id: "172"
+  regulator_description: "4432"
+  internal_regulator_score_id: "172"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:21.482067
+  updated_at: 2010-09-30 23:47:21.482067
+regulator_scores_173: 
+  id: "173"
+  regulator_description: 4N45
+  internal_regulator_score_id: "173"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:23.81301
+  updated_at: 2010-09-30 23:47:23.81301
+regulator_scores_174: 
+  id: "174"
+  regulator_description: "1222"
+  internal_regulator_score_id: "174"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:26.619507
+  updated_at: 2010-09-30 23:47:26.619507
+regulator_scores_175: 
+  id: "175"
+  regulator_description: 3N43
+  internal_regulator_score_id: "175"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:27.3933
+  updated_at: 2010-09-30 23:47:27.3933
+regulator_scores_176: 
+  id: "176"
+  regulator_description: 3N32
+  internal_regulator_score_id: "176"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:28.732556
+  updated_at: 2010-09-30 23:47:28.732556
+regulator_scores_177: 
+  id: "177"
+  regulator_description: "3221"
+  internal_regulator_score_id: "177"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:28.805333
+  updated_at: 2010-09-30 23:47:28.805333
+regulator_scores_178: 
+  id: "178"
+  regulator_description: "3424"
+  internal_regulator_score_id: "178"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:30.021597
+  updated_at: 2010-09-30 23:47:30.021597
+regulator_scores_179: 
+  id: "179"
+  regulator_description: 6N66
+  internal_regulator_score_id: "179"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:30.535162
+  updated_at: 2010-09-30 23:47:30.535162
+regulator_scores_180: 
+  id: "180"
+  regulator_description: 5N66
+  internal_regulator_score_id: "180"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:38.100239
+  updated_at: 2010-09-30 23:47:38.100239
+regulator_scores_181: 
+  id: "181"
+  regulator_description: 3N21
+  internal_regulator_score_id: "181"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:41.804543
+  updated_at: 2010-09-30 23:47:41.804543
+regulator_scores_182: 
+  id: "182"
+  regulator_description: 3N44
+  internal_regulator_score_id: "182"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:43.462814
+  updated_at: 2010-09-30 23:47:43.462814
+regulator_scores_183: 
+  id: "183"
+  regulator_description: 2N23
+  internal_regulator_score_id: "183"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:45.866224
+  updated_at: 2010-09-30 23:47:45.866224
+regulator_scores_184: 
+  id: "184"
+  regulator_description: 5N42
+  internal_regulator_score_id: "184"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:48.947758
+  updated_at: 2010-09-30 23:47:48.947758
+regulator_scores_185: 
+  id: "185"
+  regulator_description: 5N43
+  internal_regulator_score_id: "185"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:49.921295
+  updated_at: 2010-09-30 23:47:49.921295
+regulator_scores_186: 
+  id: "186"
+  regulator_description: 6N44
+  internal_regulator_score_id: "186"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:54.329436
+  updated_at: 2010-09-30 23:47:54.329436
+regulator_scores_187: 
+  id: "187"
+  regulator_description: 4N42
+  internal_regulator_score_id: "187"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:54.757092
+  updated_at: 2010-09-30 23:47:54.757092
+regulator_scores_188: 
+  id: "188"
+  regulator_description: "6656"
+  internal_regulator_score_id: "188"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:59.985508
+  updated_at: 2010-09-30 23:47:59.985508
+regulator_scores_189: 
+  id: "189"
+  regulator_description: 1NNN
+  internal_regulator_score_id: "189"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:02.553393
+  updated_at: 2010-09-30 23:48:02.553393
+regulator_scores_190: 
+  id: "190"
+  regulator_description: 2N33
+  internal_regulator_score_id: "190"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:06.589839
+  updated_at: 2010-09-30 23:48:06.589839
+regulator_scores_191: 
+  id: "191"
+  regulator_description: 3N23
+  internal_regulator_score_id: "191"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:07.258726
+  updated_at: 2010-09-30 23:48:07.258726
+regulator_scores_192: 
+  id: "192"
+  regulator_description: 5N35
+  internal_regulator_score_id: "192"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:09.334795
+  updated_at: 2010-09-30 23:48:09.334795
+regulator_scores_193: 
+  id: "193"
+  regulator_description: "6545"
+  internal_regulator_score_id: "193"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:11.127649
+  updated_at: 2010-09-30 23:48:11.127649
+regulator_scores_194: 
+  id: "194"
+  regulator_description: 4N23
+  internal_regulator_score_id: "194"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:13.025063
+  updated_at: 2010-09-30 23:48:13.025063
+regulator_scores_195: 
+  id: "195"
+  regulator_description: 5N64
+  internal_regulator_score_id: "195"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:25.580297
+  updated_at: 2010-09-30 23:48:25.580297
+regulator_scores_196: 
+  id: "196"
+  regulator_description: N4N5
+  internal_regulator_score_id: "196"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:33.318584
+  updated_at: 2010-09-30 23:48:33.318584
+regulator_scores_197: 
+  id: "197"
+  regulator_description: 3N22
+  internal_regulator_score_id: "197"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:39.569375
+  updated_at: 2010-09-30 23:48:39.569375
+regulator_scores_198: 
+  id: "198"
+  regulator_description: 2N42
+  internal_regulator_score_id: "198"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:47.16976
+  updated_at: 2010-09-30 23:48:47.16976
+regulator_scores_199: 
+  id: "199"
+  regulator_description: 33N3
+  internal_regulator_score_id: "199"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:59.697742
+  updated_at: 2010-09-30 23:48:59.697742
+regulator_scores_200: 
+  id: "200"
+  regulator_description: 1N11
+  internal_regulator_score_id: "200"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:04.980887
+  updated_at: 2010-09-30 23:49:04.980887
+regulator_scores_201: 
+  id: "201"
+  regulator_description: 3N42
+  internal_regulator_score_id: "201"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:07.650083
+  updated_at: 2010-09-30 23:49:07.650083
+regulator_scores_202: 
+  id: "202"
+  regulator_description: "1122"
+  internal_regulator_score_id: "202"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:08.415785
+  updated_at: 2010-09-30 23:49:08.415785
+regulator_scores_203: 
+  id: "203"
+  regulator_description: "4234"
+  internal_regulator_score_id: "203"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:22.005515
+  updated_at: 2010-09-30 23:49:22.005515
+regulator_scores_204: 
+  id: "204"
+  regulator_description: 42N3
+  internal_regulator_score_id: "204"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:24.538959
+  updated_at: 2010-09-30 23:49:24.538959
+regulator_scores_205: 
+  id: "205"
+  regulator_description: NNN5
+  internal_regulator_score_id: "205"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:30.654465
+  updated_at: 2010-09-30 23:49:30.654465
+regulator_scores_206: 
+  id: "206"
+  regulator_description: "1111"
+  internal_regulator_score_id: "206"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:32.90243
+  updated_at: 2010-09-30 23:49:32.90243
+regulator_scores_207: 
+  id: "207"
+  regulator_description: "5355"
+  internal_regulator_score_id: "207"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:34.640461
+  updated_at: 2010-09-30 23:49:34.640461
+regulator_scores_208: 
+  id: "208"
+  regulator_description: "3342"
+  internal_regulator_score_id: "208"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:35.899176
+  updated_at: 2010-09-30 23:49:35.899176
+regulator_scores_209: 
+  id: "209"
+  regulator_description: "2244"
+  internal_regulator_score_id: "209"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:38.742567
+  updated_at: 2010-09-30 23:49:38.742567
+regulator_scores_210: 
+  id: "210"
+  regulator_description: "3232"
+  internal_regulator_score_id: "210"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:40.746623
+  updated_at: 2010-09-30 23:49:40.746623
+regulator_scores_211: 
+  id: "211"
+  regulator_description: 1N22
+  internal_regulator_score_id: "211"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:43.487036
+  updated_at: 2010-09-30 23:49:43.487036
+regulator_scores_212: 
+  id: "212"
+  regulator_description: "2422"
+  internal_regulator_score_id: "212"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:44.051928
+  updated_at: 2010-09-30 23:49:44.051928
+regulator_scores_213: 
+  id: "213"
+  regulator_description: "4534"
+  internal_regulator_score_id: "213"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:45.095474
+  updated_at: 2010-09-30 23:49:45.095474
+regulator_scores_214: 
+  id: "214"
+  regulator_description: "1322"
+  internal_regulator_score_id: "214"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:45.181796
+  updated_at: 2010-09-30 23:49:45.181796
+regulator_scores_215: 
+  id: "215"
+  regulator_description: 2N44
+  internal_regulator_score_id: "215"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:45.260234
+  updated_at: 2010-09-30 23:49:45.260234
+regulator_scores_216: 
+  id: "216"
+  regulator_description: "2111"
+  internal_regulator_score_id: "216"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:47.738006
+  updated_at: 2010-09-30 23:49:47.738006
+regulator_scores_217: 
+  id: "217"
+  regulator_description: "4232"
+  internal_regulator_score_id: "217"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:49.120527
+  updated_at: 2010-09-30 23:49:49.120527
+regulator_scores_218: 
+  id: "218"
+  regulator_description: 54N4
+  internal_regulator_score_id: "218"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:50.643052
+  updated_at: 2010-09-30 23:49:50.643052
+regulator_scores_219: 
+  id: "219"
+  regulator_description: "1211"
+  internal_regulator_score_id: "219"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:55.42789
+  updated_at: 2010-09-30 23:49:55.42789
+regulator_scores_220: 
+  id: "220"
+  regulator_description: 3NN4
+  internal_regulator_score_id: "220"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:01.37863
+  updated_at: 2010-09-30 23:50:01.37863
+regulator_scores_221: 
+  id: "221"
+  regulator_description: 66N5
+  internal_regulator_score_id: "221"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:08.237685
+  updated_at: 2010-09-30 23:50:08.237685
+regulator_scores_222: 
+  id: "222"
+  regulator_description: "3112"
+  internal_regulator_score_id: "222"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:10.48003
+  updated_at: 2010-09-30 23:50:10.48003
+regulator_scores_223: 
+  id: "223"
+  regulator_description: "5644"
+  internal_regulator_score_id: "223"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:13.340281
+  updated_at: 2010-09-30 23:50:13.340281
+regulator_scores_224: 
+  id: "224"
+  regulator_description: 3N12
+  internal_regulator_score_id: "224"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:14.621531
+  updated_at: 2010-09-30 23:50:14.621531
+regulator_scores_225: 
+  id: "225"
+  regulator_description: 54N5
+  internal_regulator_score_id: "225"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:15.372975
+  updated_at: 2010-09-30 23:50:15.372975
+regulator_scores_226: 
+  id: "226"
+  regulator_description: 2N12
+  internal_regulator_score_id: "226"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:16.264958
+  updated_at: 2010-09-30 23:50:16.264958
+regulator_scores_227: 
+  id: "227"
+  regulator_description: "3354"
+  internal_regulator_score_id: "227"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:17.346004
+  updated_at: 2010-09-30 23:50:17.346004
+regulator_scores_228: 
+  id: "228"
+  regulator_description: "2221"
+  internal_regulator_score_id: "228"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:22.057599
+  updated_at: 2010-09-30 23:50:22.057599
+regulator_scores_229: 
+  id: "229"
+  regulator_description: "5654"
+  internal_regulator_score_id: "229"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:23.354377
+  updated_at: 2010-09-30 23:50:23.354377
+regulator_scores_230: 
+  id: "230"
+  regulator_description: 6N5N
+  internal_regulator_score_id: "230"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:30.505582
+  updated_at: 2010-09-30 23:50:30.505582
+regulator_scores_231: 
+  id: "231"
+  regulator_description: 6N4N
+  internal_regulator_score_id: "231"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:30.818258
+  updated_at: 2010-09-30 23:50:30.818258
+regulator_scores_232: 
+  id: "232"
+  regulator_description: NNN4
+  internal_regulator_score_id: "232"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:31.841808
+  updated_at: 2010-09-30 23:50:31.841808
+regulator_scores_233: 
+  id: "233"
+  regulator_description: 1N21
+  internal_regulator_score_id: "233"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:32.017716
+  updated_at: 2010-09-30 23:50:32.017716
+regulator_scores_234: 
+  id: "234"
+  regulator_description: N3N3
+  internal_regulator_score_id: "234"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:35.218977
+  updated_at: 2010-09-30 23:50:35.218977
+regulator_scores_235: 
+  id: "235"
+  regulator_description: 5N2N
+  internal_regulator_score_id: "235"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:50:41.720395
+  updated_at: 2010-09-30 23:50:41.720395
+regulator_scores_236: 
+  id: "236"
+  regulator_description: N/A
+  internal_regulator_score_id: "236"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:27.751361
+  updated_at: 2010-10-01 20:27:27.751361

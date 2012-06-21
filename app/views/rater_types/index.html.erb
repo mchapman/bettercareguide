@@ -1,0 +1,25 @@
+<h1>Listing rater_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Long</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @rater_types.each do |rater_type| %>
+  <tr>
+    <td><%= rater_type.short_description %></td>
+    <td><%= rater_type.long_description %></td>
+    <td><%= link_to 'Show', rater_type %></td>
+    <td><%= link_to 'Edit', edit_rater_type_path(rater_type) %></td>
+    <td><%= link_to 'Destroy', rater_type,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Rater type', new_rater_type_path %>

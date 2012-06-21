@@ -1,0 +1,27 @@
+<h1>Listing Users</h1>
+<%= will_paginate @users %>
+<table class="table table-striped">
+  <tr>
+    <th></th>
+    <th>Email</th>
+    <th>Last Sign In</th>
+    <th>Usage</th>
+    <th>User Since</th>
+    <th>Role(s)</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.id %></td>
+    <td><%= user.email %></td>
+    <td><%= user.current_sign_in_at ? "#{time_ago_in_words(user.current_sign_in_at)} ago from #{user.current_sign_in_ip}" : "" %></td>
+    <td><%= user.sign_in_count %></td>
+    <td><%= time_ago_in_words(user.created_at) %></td>
+    <td><%= user.roles_mask %></td>
+    <%#*<td><%= #link_to 'Show', user %>
+    <%#*<td><%= #link_to 'Administer', administer_user_path(user) %>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @users %>
+

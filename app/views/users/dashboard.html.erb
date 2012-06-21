@@ -1,0 +1,31 @@
+<h1><%= @user.full_name(:email) %>'s Dashboard</h1>
+<% unless @access_codes.empty? %>
+  <%= render :partial => "shared/enter_codes", :locals => {:permissions => @access_codes} %>
+<% end %>
+<% unless @my_services.empty? %>
+  <%= render :partial => "shared/my_services", :locals => {:my_services => @my_services} %>
+<% end %>
+<% unless @my_ratings.empty? %>
+  <%= render :partial => "shared/ratings", :locals => {:ratings => @my_ratings, :allow_edit => false} %>
+<% end %>
+<% if @ratings_to_process.empty? %>
+  <% if @access_codes.empty? && @my_services.empty? && @my_ratings.empty? %>
+    There is nothing to show on your dashboard.
+  <% end %>
+<% else %>
+  <h2>Ratings to Process</h2>
+  <%= render :partial => "shared/ratings", :locals => {:ratings => @ratings_to_process, :allow_edit => true} %>
+<% end %>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $('tr').dblclick(function() {
+      var dest = ($('a',this).first().attr('href'));
+      if (dest !== undefined) { location.href = dest; }
+    });
+
+  });
+
+</script>

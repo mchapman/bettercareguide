@@ -1,0 +1,21 @@
+<%= form_for(@internal_sector_type) do |f| %>
+  <% if @internal_sector_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@internal_sector_type.errors.count, "error") %> prohibited this internal_sector_type from being saved:</h2>
+
+      <ul>
+      <% @internal_sector_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

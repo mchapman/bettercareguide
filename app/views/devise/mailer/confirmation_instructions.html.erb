@@ -1,0 +1,19 @@
+<p>Welcome <%= @resource.email %>!</p>
+
+<p>You can confirm your account through the link below:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+
+<p>This link is only valid for a finite period (the precise time will depend on factors we cannot control or predict, but it
+is likely to be a few days).  If the link is no longer valid when you come to use it then you will need to register again.</p>
+
+<% if @resource.initial_password %>
+<p>Once you have confirmed your account you can log in using your username and your password - <%= @resource.initial_password %> - which
+you can change to something more memorable by visiting http://<%= SITE_NAME %>/users/edit.</p>
+<% end %>
+
+<p>Thank you for using <%= SITE_TITLE %>.</p>
+
+<p>You have received this email because you, or someone claiming to be you, registered at http://<%= SITE_NAME %>.  If
+it was not you please accept our apologies for the intrusion and delete this email.</p>
+

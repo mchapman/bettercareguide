@@ -1,0 +1,44 @@
+<div style="color: #222" xmlns="http://www.w3.org/1999/html">
+    <p>Hi</p>
+
+    <p>Congratulations on your successful registration with <%= @service.current_registration.regulator.short_name %>!</p>
+
+    <p>Now you can start to deliver care you are probably thinking about your marketing and I would like to make sure that
+    you are aware of <a href="www.bettercareguide.org">Better Care Guide</a> - a unique site that you can (and should)
+    register on FOR FREE.  The site contains information about all registered providers in the UK and allows service
+    users to provide feedback.</p>
+
+    <p>There is a <a href="http://www.bettercareguide.org/pages/provider_guide">guide for providers</a> on the site that
+    goes into more detail, but to summarise the advantages of registration are:
+    <ul>
+      <li>providers can enter an 'elevator pitch' that appears on the listings page</li>
+      <li>they can enter a full description of the business that appears on the service page</li>
+      <li>they are informed as soon as someone comments on their service, with the option to respond to less favourable comments before they are published (within certain timescales)</li>
+      <li>they can ensure that contact details are kept up to date</li>
+      <li>the URL of their page on the site will be submitted to search engines (subject to submission rate limits)</li>
+    </ul>
+    </p>
+
+  <p>Our site will have a link to your web site (assuming you have one and you have ensured that the URL is correct on
+    <%= link_to 'your service page', "http://www.bettercareguide.org/services/#{@service.slug}" %>) and you may like to link back to your page on our site so prospective
+    users can see favourable comments about your service.  The providers guide tells you how to make it as easy as possible
+    for your service users to give you good reviews.</p>
+
+  <p>You can use the Better Care Guide for your own research - for instance you can
+    <% if @service.internal_service_type_id == 2 %>
+      <%= link_to "check out your competition.", "http://www.bettercareguide.org/services/search?utf8=%E2%9C%93&dom=dom&radius=5&geog=#{@service.reg_address.location.gsub(' ','+')}&lat=#{@service.reg_address.lat}&lng=#{@service.reg_address.lng}" %>
+    <% else %>
+      <%= link_to "check out your competition.", "http://www.bettercareguide.org/services/search?utf8=%E2%9C%93&res=res&radius=5&geog=#{@service.reg_address.location.gsub(' ','+')}&lat=#{@service.reg_address.lat}&lng=#{@service.reg_address.lng}" %>
+    <% end %>
+    If you find the Better Care Guide useful please tell your friends and
+    colleagues by "liking" us on Facebook and/or Tweet about us - there are links on the
+    <%= link_to 'home page', 'http://www.bettercareguide.org' %> (they pan in after a few seconds).</p>
+  </p>
+
+    <p>Better Care Guide is run by <a href="http://www.reallycare.org">ReallyCare CIC</a>, a not-for-profit company which has the aim of improving the quality and
+    efficiency of adult social care through the use of technology.  In addition to
+    the Better Care Guide we also run a <a href="http://youangel.org">volunteering website</a> and we offer consultancy
+    around the use of technology in care - please contact us if you are interested in using our services.</p>
+
+</div>
+<%= render :partial => "shared/mailing_sig" %>

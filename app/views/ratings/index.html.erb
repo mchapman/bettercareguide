@@ -1,0 +1,4 @@
+<h1>Ratings</h1>
+<%= render :partial => "shared/ratings", :locals => {:ratings => @ratings, :allow_edit => true} %>
+
+<%= link_to 'New', new_rating_path, :class => 'btn btn-primary' %>

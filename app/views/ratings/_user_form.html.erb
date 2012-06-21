@@ -1,0 +1,107 @@
+<% content_for(:head) do %>
+  <%= javascript_include_tag 'service_rate.js' %>
+<% end %>
+
+<div class="bigcare_form">
+  <%= form_tag("/ratings/#{@url_ending}", :class=> "form-horizontal form") do %>
+
+    <%= render :partial => 'shared_partials/errors', :locals => {:model => @rating } %>
+    <%= hidden_field_tag 'service_id', @rating.service_id, {:name => "rating[service_id]"} %>
+    <%= hidden_field_tag 'id', @rating.id, {:name => "id"} %>
+    <%= hidden_field_tag 'rater_id', @rating.rater_id, {:name => "rating[rater_id]"} %>
+    <%= hidden_field_tag 'status_mask', @rating.status_mask, {:name => "rating[status_mask]"} %>
+
+    <fieldset>
+      <legend>Rate a Service</legend>
+
+      <div class="control-group">
+        <label class="control-label" for="ip_address">Your internet address</label>
+        <div class="controls">
+          <%= text_field_tag "ip_address", @ip_address, :disabled => true %>
+          <p class="help-block">We record this identifier (called an IP address) whenever feedback is given.&nbsp;&nbsp;
+            We will not reveal this data to any third party or show it on the site, but we may use it to detect improper use of the site.</p>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="service">Service provider</label>
+        <div class="controls">
+          <%= text_field_tag "service", @rating.service.organisation.name, :disabled => true, :class => "span5" %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="email">Your email address</label>
+        <div class="controls">
+          <% if @rating.rater %>
+            <%= text_field_tag :email, @rating.rater.email, :disabled => true, :class => "span5"%>
+          <% else %>
+            <%= text_field_tag :email, params[:email], :class => "span5" %>
+            <%= label_tag :accepted_t_and_cs, :class => "checkbox" do %>
+              <%= check_box_tag :accepted_t_and_cs %>
+              I accept the <%= link_to('terms and conditions', url_for(terms_url), :target => '_blank') %>
+            <% end %>
+        <% end %>
+          <div class="help-block">Your email address will not be shown on the site.
+              We need it to send you an email to confirm that you actually wrote the feedback, and in case there are any queries about your feedback.
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="rating_rater_type_id">I am</label>
+        <div class="controls">
+          <%= collection_select(:rating, :rater_type_id, RaterType.all, :id, :long_description, {:prompt => true}, :class => "span5") %>
+          <div class="help-block">How are you (or were you) related to the service provider?</div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="stars">Your rating</label>
+        <div class="controls">
+          <div class="rbstars">
+            1&nbsp;
+            <% (1..5).each do |rate| %>
+              <%= radio_button_tag 'rate', rate, @rating.stars == rate %>
+            <% end %>
+            &nbsp;5
+          </div>
+          <div class="jstarget">
+          </div>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="comments">Comments</label>
+        <div class="controls">
+            <%= text_area_tag :comments, @rating.comments, {:name => "rating[comments]", :rows => 7, :class => "span5"} %>
+            <div class="help-block"><b>Be careful here</b> - although we will not reveal any of your personal data to the provider
+              you need to make sure that you do not reveal your identity unintentionally in your comments.  For instance if you refer to an incident
+              that only you (or a small number of people) can know about then you may be indirectly divulging your identity.  This could have
+              an impact on future service (if you are a service user) or on your employment (if you are an employee).</div>
+          </div>
+        </div>
+
+      <div class="control-group">
+        <label class="control-label" for="effective_date">Relevant month</label>
+        <div class="controls">
+           <%= date_select :rating, :effective_date, {:start_year => @start_year, :end_year => @end_year, :order => [:month, :year], :include_blank => true, :default => @rating.effective_date, :class => "span1"} %>
+           <div class="help-block">If your comments relate to an event or to service delivered more than one month ago please enter the approximate
+                date, or the most recent date if your comments apply to a period.  Leave this field blank if the comment and rating apply to current
+                service.</div>
+            </div>
+          </div>
+    </fieldset>
+
+    <div class="form-actions">
+     <% if @url_ending == 'store' %>
+      <%= submit_tag "Publish", :class => 'submit_btn btn btn-primary' %>
+      <%= submit_tag "Preview", :class => 'submit_btn btn' %>
+     <% else %>
+      <%= submit_tag "Publish", :class => 'submit_btn btn btn-primary' %>
+      <%= submit_tag "Preview", :class => 'submit_btn btn' %>
+      <%= submit_tag "Abandon", :class => 'submit_btn btn' %>
+     <% end %>
+    </div>
+  <% end %>
+</div>

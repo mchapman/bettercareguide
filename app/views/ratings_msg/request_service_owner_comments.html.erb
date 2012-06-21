@@ -1,0 +1,12 @@
+<p><%= @greeting %></p>
+
+<p>A service you are involved in has received a new rating on our site.  Because the rating is below the
+threshold for automatic publishing it is not yet publically visible.</p>
+
+<p>You have 72 hours (three days) to respond to the rating before it is published.  You can do this by
+<%= link_to 'following this link', rating_respond_url(@rating) %>.</p>
+
+<p>If you have any problems please visit our support site at http://support.reallycare.org.</p>
+
+<p><%= EMAIL_SIG %></p>
+

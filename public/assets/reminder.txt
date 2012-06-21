@@ -1,0 +1,2 @@
+RAILS_ENV=production bundle exec rake assets:precompile
+then touch this file so it is always a visible reminder to do it

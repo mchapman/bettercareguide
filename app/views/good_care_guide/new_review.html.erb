@@ -1,0 +1,11 @@
+<p><%= @greeting %></p>
+
+<p>A rating for a service you are involved in has received a new
+<% if @rating.stars %>
+<%= @rating.stars %> star
+<% end %>
+rating on the Good Care Guide.  You can see it if you
+<%= link_to 'follow this link', @rating.full_url %>.</p>
+
+
+<p><%= EMAIL_SIG %></p>

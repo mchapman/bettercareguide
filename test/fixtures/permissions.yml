@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  service_id: 1
+  user_id: 3
+  is_owner: true
+  accepted: false
+  access_code: 99999
+
+two:
+  service_id: 2
+  user_id: 2
+  is_owner: true
+  accepted: false
+  access_code: 99998
+

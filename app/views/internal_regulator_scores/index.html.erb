@@ -1,0 +1,25 @@
+<h1>Listing internal_regulator_scores</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Value</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @internal_regulator_scores.each do |internal_regulator_score| %>
+  <tr>
+    <td><%= internal_regulator_score.description %></td>
+    <td><%= internal_regulator_score.value %></td>
+    <td><%= link_to 'Show', internal_regulator_score %></td>
+    <td><%= link_to 'Edit', edit_internal_regulator_score_path(internal_regulator_score) %></td>
+    <td><%= link_to 'Destroy', internal_regulator_score,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Internal regulator score', new_internal_regulator_score_path %>

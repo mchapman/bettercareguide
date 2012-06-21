@@ -1,0 +1,34 @@
+<h1>Listing Permissions</h1>
+<%= will_paginate @permissions %>
+<div class="table table-striped">
+<table>
+  <tr>
+    <th>Service</th>
+    <th>User</th>
+    <th>Requested?</th>
+    <th>Notes</th>
+    <th>Accepted?</th>
+    <th>Access Code</th>
+    <th>Failures</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @permissions.each do |permission| %>
+  <tr>
+    <td><%= link_to permission.service.organisation.name, "/services/#{permission.service_id}" %></td>
+    <td><%= permission.user.email %></td>
+    <td><%= time_ago_in_words(permission.created_at)+' ago' %></td>
+    <td><%= permission.notes %></td>
+    <td><%= permission.accepted %></td>
+    <td><%= permission.access_code %></td>
+    <td><%= permission.code_failures %></td>
+    <td><%= link_to 'Show', permission, :class => 'btn btn-mini' %></td>
+    <td><%= link_to 'Edit', edit_permission_path(permission) , :class => 'btn btn-mini' %></td>
+    <td><%= link_to 'Destroy', permission,  :data => { :confirm => 'Are you sure?' }, :method => :delete, :class => 'btn btn-mini btn-danger' %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+<%= will_paginate @permissions %>

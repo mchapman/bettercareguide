@@ -1,0 +1,23 @@
+<fieldset>
+<legend>Rating Preview</legend>
+
+<div id="tabs" style="padding: 2em 0">
+  <div id="rating-hist" class="tabsheet">
+    <div class="tabsheet-inner">
+      <%= render :partial => "shared/ratings_preview", :locals => { :rating => @rating, :max_span => 11 } %>
+    </div>
+  </div>
+</div>
+</fieldset>
+
+<div class="form-actions" style="padding-bottom: 42px;">
+  <div class="pull-left" style="margin-right: 8px;">
+    <%= button_to "Publish", publish_rating_url(@rating.id), :class => "pull-left btn btn-primary" %>
+  </div>
+  <div class="pull-left" style="margin-right: 8px;">
+    <%= button_to "Amend",   amend_rating_url(@rating.id), :class => "pull-left btn" %>
+  </div>
+  <div class="pull-left">
+    <%= button_to "Abandon", abandon_rating_url(@rating.id), :class => "pull-left btn" %>
+  </div>
+</div>

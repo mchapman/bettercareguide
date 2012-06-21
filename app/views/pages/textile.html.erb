@@ -1,0 +1,18 @@
+<p>We use a modified version of the <%= link_to "textile", "http://redcloth.org/textile", :target => "_blank" %> markup language
+which allows you to add some formatting to your description.</p>
+
+<p>The following tags (and [attributes]) are supported:</p>
+
+<table class="table table-bordered table-condensed">
+  <thead><th>Description</th><th>Example</th><th>Tag</th><th>Supported attributes</th><th>Comments</th></thead>
+  <tbody>
+  <tr><td>Strong importance</td><td>We will *never* let you down</td><td>strong</td><td></td><td>displayed as bold</td></tr>
+  <tr><td>Stress emphasis</td><td>We are _very_ reliable</td><td>em</td><td></td><td>displayed as italic</td></tr>
+  <tr><td>Link</td><td>Visit our "website":http://www.example.com</td><td>a</td><td>href title</td><td>nofollow is used, and links open in new tab</td></tr>
+  <tr><td>Line break</td><td>Roses are red,<br />Violets are blue</td><td>br</td><td></td><td></td></tr>
+  <tr><td>Paragraph</td><td><p>Paragraph one</p><p>Paragraph two</p></td><td>p</td><td></td><td>Leave a blank line between paragraphs</td></tr>
+  <tr><td>Unordered list<br /><ul><li>a bullet</li><li>another bullet</li></ul></td><td>* this<br />* that<br />* the other</td><td>ul, li</td><td></td><td></td></tr>
+  <tr><td>Ordered list<br /><ol><li>firstly</li><ol><li>level 2</li></ol></ol></td><td># this<br /># that<br />## level 2</td><td>ol, li</td><td></td><td></td></tr>
+  <tr><td>Alternate voice</td><td>Ever get that feeling of __déjà vu__?</td><td>i</td><td></td><td></td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+<h1>Listing internal_service_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @internal_service_types.each do |internal_service_type| %>
+  <tr>
+    <td><%= internal_service_type.description %></td>
+    <td><%= link_to 'Show', internal_service_type %></td>
+    <td><%= link_to 'Edit', edit_internal_service_type_path(internal_service_type) %></td>
+    <td><%= link_to 'Destroy', internal_service_type,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Internal service type', new_internal_service_type_path %>

@@ -1,0 +1,105 @@
+<% content_for(:head) do %>
+<%= javascript_include_tag 'service_claim.js' %>
+<% end %>
+
+<% if user_signed_in? %>
+  <% if can? :update, @service %>
+    <p>Your request to update the record for <b><%= @service.organisation.name %></b>
+    has been accepted and you can start straight away.  We recommend that you read the
+    rest of this page, which tells you about the data you can update and where on
+    the system it is used, before you start.  But if you haven't got time for all
+    that then just <%= link_to 'click here', edit_service_path(@service) %>.</p>
+  <% else %>
+    <p>You have requested to be authorised to update our records for <b><%= @service.organisation.name %></b>.</p>
+  <% end %>
+<% else %>
+  <p>Thanks for asking to be recorded as the service provider of
+  <b><%= @service.organisation.name %></b>.  You need to be logged in to register yourself
+  as the service provider.</p>
+<% end %>
+<% if user_signed_in? and can? :update, @service %>
+  <p>Here are some of the things you can do now that you are registered as a service provider:</p>
+<% else %>
+  <p>There are several reasons to take the time to register as a service provider:</p>
+<% end %>
+<ol>
+  <li>Enter a brief text summary that appears on the services search page for
+      maximum impact</li>
+  <li>Enter a full description of the business that appears on the service page</li>
+  <li>Get informed as soon as someone comments on your service, with the option to
+      respond to comments before they are published</li>
+  <li>Ensure your contact details are kept up to date</li>
+  <li>Keep informed about changes to this website that might affect you as we introduce them</li>
+</ol>
+<% if user_signed_in? %>
+  <% if cannot? :update, @service %>
+    <p>In order to assure that we don't give access to the wrong people we now
+    need to send you an access code at the registered office of <%= @service.organisation.name %>.
+    Please tick your preferred method of receiving the code - remember to check that the address / number
+    is correct.</p>
+
+    <%= form_tag "/services/#{@service.id}/sendcode", :method => :get do %>
+    <table class="table">
+      <tr>
+        <th></th>
+        <th>Method</th>
+        <th>Contact Details</th>
+        <th>How it works</th>
+      </tr>
+      <% if @service.organisation.registered_address_fax %>
+        <tr>
+          <td><%= radio_button_tag('ac_method','fax',false, {:class => "ac_method"}) %></td>
+          <td>Fax</td>
+          <td><%= @service.organisation.registered_address_fax.number %></td>
+          <td>We fax you the code straight away.  Our preferred means of sending the code.  Quick and easy, with the reassurance of a piece of paper.</td>
+        </tr>
+      <% end %>
+      <% if @service.organisation.registered_address_landline %>
+        <tr>
+          <td><%= radio_button_tag('ac_method','landline',false, {:class => "ac_method"}) %></td>
+          <td>Landline</td>
+          <td><%= @service.organisation.registered_address_landline.number %></td>
+          <td>We send the code in a text message to your landline.  If you select this option make sure the person who answers the phone knows what is happening before you click the <b>Proceed</b> button.</td>
+        </tr>
+      <% end %>
+      <tr>
+        <td><%= radio_button_tag('ac_method','mail',false, {:class => "ac_method"}) %></td>
+        <td>Mail</td>
+        <td><%= put_commas_in_address(@service.organisation.registered_address) %></td>
+        <td>We send you the code by second class snail-mail.  Slow, not super-reliable and expensive for us.  Only select this method if you have to.</td>
+      </tr>
+      <tr>
+        <td><%= radio_button_tag('ac_method','rescan',false, {:class => "ac_method"}) %></td>
+        <td colspan="3">If the none of the contact details above are correct, but your details are correct on the regulator website then select this option and we will send you an email when we have updated the data from the regulator site.</td>
+      </tr>
+      <tr>
+        <td><%= radio_button_tag('ac_method','none',false, {:class => "ac_method"}) %></td>
+        <td colspan="3">If none of the options above apply then select this option, fill in your phone number below and we will try and figure out an alternative means of authentication.  If you have not informed the regulator of your new contact details you should do so.</td>
+      </tr>
+      </table>
+      <div class="bigcare_form">
+        <% if !current_user.person %>
+            We need your name so we can send the code for your attention:
+            <div class="field">
+              <%= label_tag "Forename" %>
+              <%= text_field_tag 'forename' %>
+            </div>
+            <div class="field">
+              <%= label_tag "Surname" %>
+              <%= text_field_tag 'surname' %>
+            </div>
+        <% end %>
+        <div class="field" id="contact_field">
+          <%= label_tag "Contact number" %>
+          <%= text_field_tag 'contact' %><span id="leave"> (only required for last option)</span>
+        </div>
+      </div>
+      <%= submit_tag "Proceed", :name => nil %>
+    <% end %>
+  <% else %>
+    <%= link_to 'Click here to proceed', edit_service_path(@service) %>
+  <% end %>
+<% else %>
+  <%= link_to "Log in", new_user_session_path %> or <%= link_to "Register", new_user_registration_path %>
+<% end %>
+

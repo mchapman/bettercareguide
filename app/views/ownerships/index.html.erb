@@ -1,0 +1,27 @@
+<h1>Listing ownerships</h1>
+
+<table>
+  <tr>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Share</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ownerships.each do |ownership| %>
+  <tr>
+    <td><%= ownership.start_date %></td>
+    <td><%= ownership.end_date %></td>
+    <td><%= ownership.share %></td>
+    <td><%= link_to 'Show', ownership %></td>
+    <td><%= link_to 'Edit', edit_ownership_path(ownership) %></td>
+    <td><%= link_to 'Destroy', ownership,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ownership', new_ownership_path %>

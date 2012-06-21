@@ -1,0 +1,12 @@
+<p>Thank you, your comments and rating have been saved.</p>
+
+<% unless user_signed_in? %>
+<p>We have sent you an email with a link and a password in it.  Click the link to confirm that it was you that rated the service.</p>
+<% end %>
+
+<p>Before your rating and comments are published they may need to be approved, which normally takes no longer than a day.</p>
+
+<p>We will send you an email when the rating is published.</p>
+
+<%= link_to 'Proceed', url_for(root_url) %>
+

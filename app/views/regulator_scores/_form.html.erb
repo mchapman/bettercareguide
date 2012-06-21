@@ -1,0 +1,21 @@
+<%= form_for(@regulator_score) do |f| %>
+  <% if @regulator_score.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@regulator_score.errors.count, "error") %> prohibited this regulator_score from being saved:</h2>
+
+      <ul>
+      <% @regulator_score.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :regulator_description %><br />
+    <%= f.text_field :regulator_description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

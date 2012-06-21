@@ -1,0 +1,23 @@
+<h1>Listing regulator_service_types</h1>
+
+<table>
+  <tr>
+    <th>Regulator description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @regulator_service_types.each do |regulator_service_type| %>
+  <tr>
+    <td><%= regulator_service_type.regulator_description %></td>
+    <td><%= link_to 'Show', regulator_service_type %></td>
+    <td><%= link_to 'Edit', edit_regulator_service_type_path(regulator_service_type) %></td>
+    <td><%= link_to 'Destroy', regulator_service_type,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Regulator service type', new_regulator_service_type_path %>

@@ -1,0 +1,29 @@
+--- 
+regulators_001: 
+  id: "1"
+  domain: England
+  web_page_format: http://www.cqc.org.uk/registeredservicesdirectory/RSSearchDetail.asp?ID=%010d
+  organisation_id: "1"
+  created_at: 2010-09-27 19:48:37.22718
+  updated_at: 2010-09-27 19:48:37.22718
+regulators_002: 
+  id: "4"
+  domain: Northern Ireland
+  web_page_format: http://www.rqia.org.uk/what_we_do/registration__inspection_and_reviews/service_provider_directory.cfm
+  organisation_id: "4"
+  created_at: 2010-09-27 19:48:37.308003
+  updated_at: 2010-09-27 19:48:37.308003
+regulators_003: 
+  id: "3"
+  domain: Wales
+  web_page_format: http://www.csiw.wales.gov.uk/dataviewer/details.asp?code=%0d
+  organisation_id: "3"
+  created_at: 2010-09-27 19:48:37.284224
+  updated_at: 2010-09-27 19:48:37.284224
+regulators_004: 
+  id: "2"
+  domain: Scotland
+  web_page_format: http://www.carecommission.com/index.php
+  organisation_id: "2"
+  created_at: 2010-09-27 19:48:37.25848
+  updated_at: 2010-09-27 19:48:37.25848

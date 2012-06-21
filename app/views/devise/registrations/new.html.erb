@@ -1,0 +1,47 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "form form-horizontal"}) do |f| %>
+  <%= devise_error_messages! %>
+
+<fieldset>
+<legend>Register</legend>
+
+  <div class="control-group">
+    <%= f.label :email, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :email %>
+      <p class="help-block">Please note: If you are a service provider who intends to update the record for
+        your service please use your work email address (if you have one) rather than a
+        personal one (such as a gmail or hotmail account).  This can help to streamline
+        the validation process.</p>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :password, :class => "control-label"  %>
+    <div class="controls">
+      <%= f.password_field :password %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :password_confirmation, :class => "control-label"  %>
+    <div class="controls">
+      <%= f.password_field :password_confirmation %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <div class="controls">
+      <%= label_tag :accepted_t_and_cs, :class => "checkbox" do %>
+        <%= f.check_box :accepted_t_and_cs %>
+        I accept the <%= link_to('terms and conditions', url_for(terms_url), :target => '_blank') %>
+      <% end %>
+    </div>
+  </div>
+
+</fieldset>
+<div class="form-actions">
+  <%= f.submit "Register", :class => "btn btn-primary"  %>
+</div>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>

@@ -1,0 +1,25 @@
+For the attention of <%= @forename %> <%= @surname %>
+
+
+
+Dear <%= @forename %>,
+
+Thank you for using <%= DOMAIN_NAME %>.
+
+The access code for <%= raw @service.organisation.name %> is <%= @permission.access_code %>
+
+To enter the access code visit <%= SITE_URL %>, login (if you
+didn't select "Remember me" when you logged in before) and click on [Dashboard]
+on the menu down the left hand side.  You have two weeks and three
+attempts to enter the access code.
+
+Once the access code has been entered you will be able to update the service
+details (again accessed via the Dashboard).
+
+If you have any problems please visit our support site at http://support.reallycare.org.
+
+<%= EMAIL_SIG %>
+
+
+
+

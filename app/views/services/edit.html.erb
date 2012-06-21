@@ -1,0 +1,191 @@
+<%= form_for @service, :html => {:class => "form form-horizontal"} do |f| %>
+  <%= render :partial => 'shared_partials/errors', :locals => {:model => @service } %>
+
+  <fieldset>
+  <legend id="top">Service Details</legend>
+    <%= f.fields_for :organisation do |org_form| %>
+      <div class="control-group" title = "Enter the trading name of the service - the name by which customers will know it">
+        <%= org_form.label :name, :class => "control-label" %>
+        <div class="controls">
+          <%= org_form.text_field :name, :class=>"span9" %>
+        </div>
+      </div>
+    <% end %>
+    <div class="tabbable">
+      <ul id="tab" class="nav nav-tabs">
+        <li class="active"><a href="#tabs-address" data-toggle="tab" title="Information about the contact details for the service">Address</a></li>
+        <li><a href="#tabs-enhancements" data-toggle="tab" title="This is where you can enhance your service's record to 'pitch' to potential customers">Enhancements</a></li>
+        <li><a href="#tabs-users" data-toggle="tab" title="User configuration page, including setting up users to respond to ratings">Users</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="tabs-address" class="tab-pane pe active">
+          <div class="row">
+            <div class="span6">
+              <%= f.fields_for :reg_address do |addr_form| %>
+                <div class="control-group">
+                  <%= addr_form.label :line1, AddressesHelper.local_field_name(0), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :line1,:class=>"span4" %>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <%= addr_form.label :line2, AddressesHelper.local_field_name(1), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :line2,:class=>"span4" %>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <%= addr_form.label :line3, AddressesHelper.local_field_name(2), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :line3,:class=>"span4" %>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <%= addr_form.label :city, AddressesHelper.local_field_name(3), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :city,:class=>"span4" %>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <%= addr_form.label :state, AddressesHelper.local_field_name(4), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :state,:class=>"span4" %>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <%= addr_form.label :postal_zip_code, AddressesHelper.local_field_name(5), :class => "control-label" %>
+                  <div class="controls">
+                  <%= addr_form.text_field :postal_zip_code ,:class=>"span2"%>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+            <div class="span6">
+              <%= f.fields_for :reg_phones do |phone_form| %>
+                <div class="control-group">
+                  <%= phone_form.label :number, PhoneType.find(phone_form.object.phone_type_id).description, :class => "control-label" %>
+                  <div class="controls">
+                    <%= phone_form.text_field :number,:class=>"span4" %>
+                  </div>
+                </div>
+              <% end %>
+              <% if can? :manage, @service %>
+                <div class="control-group">
+                  <%= f.label :internal_service_type_id, 'Service Type', :class => "control-label" %>
+                  <div class="controls">
+                    <%= f.collection_select(:internal_service_type_id, InternalServiceType.all, :id, :description, :include_blank => false) %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+          <div class="to-top">
+            <a href="#top">Back to Top</a>
+          </div>
+        </div>
+        <div id="tabs-enhancements" class="tab-pane pe">
+          <div class="row">
+            <div class="span6">
+              <%= f.fields_for :organisation do |org_form2| %>
+                <div class="control-group" title="Enter the URL of the service's website (leave out the http:// bit).">
+                  <%= org_form2.label :url, "Web site" , :class => "control-label" %>
+                  <div class="controls">
+                    <%= org_form2.text_field :url,:class=>"span4" %>
+                  </div>
+                </div>
+                <% if can? :manage, @service %>
+                  <div class="control-group">
+                    <%= org_form2.label :internal_sector_type_id, 'Sector', :class => "control-label" %>
+                    <div class="controls">
+                      <%= org_form2.collection_select(:internal_sector_type_id, InternalSectorType.all, :id, :description, :include_blank => true) %>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+              <div class="control-group" title = "Enter the short summary that you would like to appear on the main search page in the grid">
+                  <label for="service_elevator_pitch" class = "control-label">Summary pitch (<span class="charsLeft">150</span>)</label>
+                  <div class="controls">
+                    <%= f.text_area :elevator_pitch, {:rows => 3, :class=>"limited span4"} %>
+                    <input type="hidden" name="maxlength" value="150" />
+                  </div>
+              </div>
+            </div>
+            <div class="span6">
+              <% if @service.date_started_trading_implied %>
+                <div class="control-group" title="Enter the date your service was first offered">
+                   <%= f.label :date_started_trading, :class => "control-label" %>
+                   <div class="controls">
+                     <%= f.text_field :date_started_trading %>
+                   </div>
+                </div>
+              <% end %>
+              <div class="control-group">
+                <%= f.label :description, "Full description" , :class => "control-label" %>
+                <div class="controls">
+                  <%= f.text_area :description, :rows => 8, :title => '', :class=>"span4" %>
+                  <p class="help-block">Enter a full description of the service you offer.  Users will see this if they drill down to your service form the main search results grid.  You can use <%= link_to "textile", url_for(textile_url), :target => "_blank" %> to spice it up a little!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="to-top">
+            <a href="#top">Back to Top</a>
+          </div>
+        </div>
+        <% if cannot? :admin, @service then my_options = {:disabled => 'disabled'} else my_options = {} end %>
+        <div id="tabs-users" class="tab-pane pe">
+          <table class="table table-striped" summary="Users connected to this service" title="See header row for hints">
+            <tr>
+            <th scope="col">User</th>
+            <th scope="col" title="Is this user an administrator for this service?">Admin?</th>
+            <th scope="col" title="Does this user get an email each time a new rating for the service is published?">Email new ratings?</th>
+            <th scope="col" title="Is this user invited to comment on ratings?">Invite comment on ratings?</th>
+            <th scope="col" title="Should we send this user an email if we detect that a review has been posted on Good Care Guide?">Notify of Good Care Guide review?</th>
+            <th scope="col" title="Has this user had their rights to update the service revoked?">Obsolete</th>
+            </tr>
+          <%= f.fields_for :permissions do |perm| %>
+            <% if perm.object.user_id == current_user.id then obs_options = {:title => 'You cannot make your own user obsolete', :disabled => 'disabled'} else obs_options = {} end %>
+            <tr>
+              <td><%= perm.object.user.full_name(:email) %></td>
+              <td><%= perm.check_box :is_owner, my_options %></td>
+              <td><%= perm.check_box :email_all_ratings, my_options %></td>
+              <td><%= perm.check_box :notify_poor_ratings, my_options %></td>
+              <td><%= perm.check_box :notify_good_care_guide_reviews, my_options %></td>
+              <td><%= perm.check_box :obsolete, my_options.merge(obs_options) %></td>
+            </tr>
+          <% end %>
+          </table>
+          <div class="control-group" title = "Set the level below which you want your users to be invited to comment on ratings.  This will apply only to users with ticks in the 'Invite comment...?' column. 0 means you never want to comment">
+            <%= f.label :invite_comment_up_to_stars, "Invite comments up to" , :class => "control-label" %>
+            <div class="controls">
+              <%= f.number_field :invite_comment_up_to_stars, {:min => 0, :max => 5, :class => 'span1'} %> stars
+            </div>
+          </div>
+          <%#*<div class="field">%>
+            <%#= f.label :users_need_approval, "New users need admin approval" %>
+            <%#= f.check_box :users_need_approval, :title => 'Tick this box if you want new users claiming to represent this service to need an admin approval' %>
+          <%#*</div>%>
+          <div class="to-top">
+            <a href="#top">Back to Top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-actions">
+    <%= f.submit 'Save', :class => 'btn submit_btn btn-primary' %>
+    <%= f.submit 'Save and see public view', :class => 'submit_btn btn' %>
+  </div>
+<% end %>
+<script type="text/javascript">
+  $('textarea.limited').maxlength({
+    'feedback' : '.charsLeft',
+    'useInput' : true
+  });
+  $(function () {
+    $(".to-top").hide();
+    $('.pe').removeClass('pe');
+    $('.nav-tabs').tabs();
+  })
+</script>
+

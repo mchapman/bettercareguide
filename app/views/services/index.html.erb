@@ -1,0 +1,31 @@
+<h1>Listing services</h1>
+
+<table>
+  <tr>
+    <th>Regulator service ref</th>
+    <th>date_started_trading</th>
+    <th>date_started_trading implied</th>
+    <th>Capacity</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @services.each do |service| %>
+  <tr>
+    <td><%= service.regulator_service_ref %></td>
+    <td><%= service.date_started_trading %></td>
+    <td><%= service.date_started_trading_implied %></td>
+    <td><%= service.capacity %></td>
+    <td><%= service.description %></td>
+    <td><%= link_to 'Show', service %></td>
+    <td><%= link_to 'Edit', edit_service_path(service) %></td>
+    <td><%= link_to 'Destroy', service,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Service', new_service_path %>

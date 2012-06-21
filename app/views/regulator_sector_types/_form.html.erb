@@ -1,0 +1,21 @@
+<%= form_for(@regulator_sector_type) do |f| %>
+  <% if @regulator_sector_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@regulator_sector_type.errors.count, "error") %> prohibited this regulator_sector_type from being saved:</h2>
+
+      <ul>
+      <% @regulator_sector_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :regulator_description %><br />
+    <%= f.text_field :regulator_description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

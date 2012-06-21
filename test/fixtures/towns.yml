@@ -1,0 +1,11 @@
+uckfield:
+  id: 1
+  name: UCKFIELD
+  lat: 50.9724555
+  lng: 0.0971166
+
+taunton:
+  id: 2
+  name: TAUNTON
+  lat: 51.0146
+  lng: -3.1034

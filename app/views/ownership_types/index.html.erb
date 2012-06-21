@@ -1,0 +1,23 @@
+<h1>Listing ownership_types</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ownership_types.each do |ownership_type| %>
+  <tr>
+    <td><%= ownership_type.description %></td>
+    <td><%= link_to 'Show', ownership_type %></td>
+    <td><%= link_to 'Edit', edit_ownership_type_path(ownership_type) %></td>
+    <td><%= link_to 'Destroy', ownership_type,  :data => { :confirm => 'Are you sure?' }, :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ownership type', new_ownership_type_path %>

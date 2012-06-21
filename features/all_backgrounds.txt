@@ -1,0 +1,59 @@
+# I have no idea how to DRY this - please tell me
+
+Background:
+# If you add anything to the background add it to all_backgrounds.txt as well
+  Given the following users exist
+    | email                  | password | roles_mask | accepted_t_and_cs |
+    | normal@example.com     | secret   | 0          | 1                 |
+    | admin@example.com      | secret   | 1          | 1                 |
+    | reallycare@example.com | secret   | 2          | 1                 |
+  Given the following organisations exist
+    | name                                             | url                     | organisation |
+    | Care Quality Commission                          | www.cqc.org.uk          | cqc          |
+    | The Care Commission                              | www.carecommission.com  | cc           |
+    | Care and Social Services Inspectorate Wales      | www.csiw.wales.gov.uk   | csiw         |
+    | The Regulation and Quality Improvement Authority | www.rqia.org.uk         | rqia         |
+    | Care4U                                           | http://www.example.com  | care4u       |
+    | Carlton Mansions Care Home                       | www.fourseasons.com     | carlton      |
+  And the following regulators with association exist
+    | domain           | web_page_format                                                                                        | a_Organisation@name@organisation                 |
+    | England          | http://www.cqc.org.uk/registeredservicesdirectory/RSSearchDetail.asp?ID=%s                             | Care Quality Commission                          |
+    | Scotland         | http://www.carecommission.com/index.php                                                                | The Care Commission                              |
+    | Wales            | http://www.csiw.wales.gov.uk/dataviewer/details.asp?code=%s                                            | Care and Social Services Inspectorate Wales      |
+    | Northern Ireland |  http://www.rqia.org.uk/what_we_do/registration__inspection_and_reviews/service_provider_directory.cfm | The Regulation and Quality Improvement Authority |
+  Given the following internal_service_types exist
+    | description                 | requires_type_col | sort_order | seo_keywords |
+    | Care in a Residential Home  | t                 | 2          | residential  |
+    | Care at Home                | f                 | 1          | homecare     |
+    | Other                       | t                 | 3          | nursing      |
+  Given the following regulator_service_types with association exist
+    | regulator_description              | a_Regulator@domain@regulator  | a_InternalServiceType@description@internal_service_type |
+    | Care home with nursing%Care Home   | England                       | Care in a Residential Home                              |
+    | Domiciliary Care Agencies%         | England                       | Care at Home                                            |
+  And the following internal_sector_types exist
+    | description     |
+    | Private         |
+  And the following regulator_sector_types with association exist
+    | regulator_description  | a_Regulator@domain@regulator | a_InternalSectorType@description@internal_sector_type |
+    | Private                | England                      | Private                                               |
+  And the following services with association exist
+    | regulator_service_ref |registration_date | registration_date_implied | description                    | a_Organisation@name@organisation | a_Regulator@domain@regulator | a_RegulatorServiceType@regulator_description@regulator_service_type | a_RegulatorSectorType@regulator_description@regulator_sector_type |
+    | care4u                |2009-09-09        | false                     | We provide a brilliant service | Care4U                           | England                      | Domiciliary Care Agencies%                                          | Private                                                           |
+    | carlton               |2009-09-09        | false                     | We are great                   | Carlton Mansions Care Home       | England                      | Care home with nursing%Care Home                                    | Private                                                           |
+  And the following rater_types exist
+    | short_description      | long_description                                           |
+    | Service User           | someone who uses the service                               |
+    | Family of Service User | a family member of someone who uses the service            |
+    | Employee               | employed by the service provider                           |
+    | Care Professional      | a care professional working alongside the service provider |
+    | Other                  | some other connection to provider (specify in comments)    |
+  And the following permissions with association exist
+    | a_User@email@user  | a_Service@regulator_service_ref@service | accepted |
+    | normal@example.com | carlton                                 | true     |
+  Given the following phone_types exist
+    |id| description |
+    | 1| Landline    |
+    | 2| Fax         |
+  And the following ratings with association exists
+    | a_User@email@rater  | a_Service@regulator_service_ref@service | stars | a_RaterType@short_description@rater_type |
+    | another@example.com | care4u                                  | 5     | Service User                             |

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @internal_regulator_score.description %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @internal_regulator_score.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_internal_regulator_score_path(@internal_regulator_score) %> |
+<%= link_to 'Back', internal_regulator_scores_path %>

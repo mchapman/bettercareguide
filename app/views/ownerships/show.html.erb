@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start date:</b>
+  <%= @ownership.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @ownership.end_date %>
+</p>
+
+<p>
+  <b>Share:</b>
+  <%= @ownership.share %>
+</p>
+
+
+<%= link_to 'Edit', edit_ownership_path(@ownership) %> |
+<%= link_to 'Back', ownerships_path %>

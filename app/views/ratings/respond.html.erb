@@ -1,0 +1,55 @@
+<% content_for(:head) do %>
+  <%= javascript_include_tag 'service_rate.js' %>
+<% end %>
+
+<%= render :partial => 'layouts/pictures' %>
+<div class="span8">
+  <%= form_tag("/ratings/process_response", :class => "form form-horizontal") do %>
+    <%= hidden_field_tag 'id', @rating.id, {:name => "id"} %>
+    <fieldset>
+      <legend>Respond to Rating</legend>
+      <div class="control-group">
+        <%= label_tag "Service provider", nil, :class => "control-label" %>
+        <div class="controls">
+          <%= text_field_tag "service", @rating.service.organisation.name, :disabled => true %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label_tag "Rated by ", nil, :class => "control-label" %>
+        <div class="controls">
+          <%= text_field_tag "rater_type", @rating.rater_type.long_description, {:disabled => true} %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label_tag :stars, 'Rating', :class => "control-label" %>
+        <div class="controls">
+          <div class="rating">
+            <div style=<%= raw(sprintf('"width:%d%%"', @rating.stars * 20)) %>></div>
+          </div>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label_tag :comments, nil, :class => "control-label" %>
+        <div class="controls">
+          <%= text_area_tag :comments, @rating.comments, {:rows => 7, :name => "rating[comments]", :disabled => true} %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label_tag :effective_date, "Relevant month", :class => "control-label" %>
+        <div class="controls">
+          <%= text_field_tag :effective_date, @rating.rating_effective_from.strftime('%B %Y'), {:disabled => true} %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label_tag :response_text, "Service provider pesponse", :class => "control-label" %>
+        <div class="controls">
+          <%= text_area_tag :response_text, @rating.response_text, {:rows => 7, :name => "rating[response_text]", :title => "If you would like to respond to the comments made by the reviewer then do so here before pressing the Submit button"} %>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-actions">
+      <%= submit_tag "Submit", :class => 'submit_btn btn btn-primary' %>
+      <%= submit_tag "Inform Site Admin", :class => 'submit_btn btn btn-danger', :disabled => @report_disabled, :title => "Click here if the comment is spam, illegal, includes personal data or is in some other way inappropriate.  Please put details of your reason in the response box.  Abuse of this feature #{@report_snippet} it to be disabled for your Service#{@report_snippet2}." %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+<%= simple_form_for @regulator do |f| %>
+  <%= f.error_messages %>
+  <%= f.input :short_name %>
+  <%= f.input :domain %>
+  <%= f.input :web_page_format %>
+  <%= f.input :regulation_type %>
+  <%= f.input :description %>
+  <%= f.input :obsolete %>
+  <%= f.button :submit %>
+<% end %>

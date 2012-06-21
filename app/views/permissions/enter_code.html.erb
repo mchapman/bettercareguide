@@ -1,0 +1,26 @@
+<div class="bigcare_form">
+<fieldset>
+<legend>Enter Access Code</legend>
+<%= form_tag process_code_path(@permission), :method => :get do %>
+  <div class="field">
+    <%= label_tag 'Service Name' %>
+    <%= text_field_tag 'Service Name', @permission.service.organisation.name, :disabled => true %>
+  </div>
+  <div class="field">
+    <%= label_tag 'Requested' %>
+    <%= text_field_tag 'Requested', @permission.created_at.strftime('%d %b %Y %H:%M'), :disabled => true %>
+  </div>
+  <div class="field">
+    <%= label_tag :notes %>
+    <%= text_area_tag 'Notes', @permission.notes, :rows => 5, :disabled => true %>
+  </div>
+  <div class="field">
+    <%= label_tag 'Access Code' %>
+    <%= text_field_tag 'access_code', "" %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Process Access Code", :name => nil %>
+  </div>
+<% end %>
+</fieldset>
+</div>

@@ -1,0 +1,253 @@
+--- 
+regulator_service_types_001: 
+  id: "2"
+  regulator_description: Care home with nursing%Care Home
+  internal_service_type_id: "1"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:44.215842
+  updated_at: 2010-09-27 19:48:44.215842
+regulator_service_types_002: 
+  id: "3"
+  regulator_description: Nurses Agency%
+  internal_service_type_id: "3"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:53.091289
+  updated_at: 2010-09-27 19:48:53.091289
+regulator_service_types_003: 
+  id: "4"
+  regulator_description: Care home not providing medicines or medical treatment%Care Home
+  internal_service_type_id: "1"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:50:09.37638
+  updated_at: 2010-09-27 19:50:09.37638
+regulator_service_types_004: 
+  id: "5"
+  regulator_description: Domiciliary Care Agencies%
+  internal_service_type_id: "2"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:54:48.674221
+  updated_at: 2010-09-27 19:54:48.674221
+regulator_service_types_005: 
+  id: "6"
+  regulator_description: Adult Placement Schemes%Adult Placement Schemes
+  internal_service_type_id: "3"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:58:36.267792
+  updated_at: 2010-09-27 19:58:36.267792
+regulator_service_types_006: 
+  id: "9"
+  regulator_description: Adult Residential%Care Home Nursing Younger Adult
+  internal_service_type_id: "3"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:06.934845
+  updated_at: 2010-09-27 23:59:06.934845
+regulator_service_types_007: 
+  id: "10"
+  regulator_description: Adult Placement%Placement Scheme
+  internal_service_type_id: "3"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:07.971432
+  updated_at: 2010-09-27 23:59:07.971432
+regulator_service_types_008: 
+  id: "11"
+  regulator_description: Adult Residential%Care Home Younger Adult
+  internal_service_type_id: "3"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:19.584235
+  updated_at: 2010-09-27 23:59:19.584235
+regulator_service_types_009: 
+  id: "12"
+  regulator_description: Domiciliary Care%Agency < 200hrs
+  internal_service_type_id: "2"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:40.588914
+  updated_at: 2010-09-27 23:59:40.588914
+regulator_service_types_010: 
+  id: "7"
+  regulator_description: Adult Residential%Care Home with Nursing Older Adult
+  internal_service_type_id: "2"
+  regulator_id: "3"
+  created_at: 2010-09-27 20:04:27.988726
+  updated_at: 2010-09-27 20:04:27.988726
+regulator_service_types_011: 
+  id: "8"
+  regulator_description: Adult Residential%Care Home Older Adult
+  internal_service_type_id: "2"
+  regulator_id: "3"
+  created_at: 2010-09-27 20:04:29.55699
+  updated_at: 2010-09-27 20:04:29.55699
+regulator_service_types_012: 
+  id: "13"
+  regulator_description: Domiciliary Care%Agency > 200hrs
+  internal_service_type_id: "2"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:43.448994
+  updated_at: 2010-09-27 23:59:43.448994
+regulator_service_types_013: 
+  id: "14"
+  regulator_description: Domiciliary Care%Supported Housing
+  internal_service_type_id: "2"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:56.138264
+  updated_at: 2010-09-27 23:59:56.138264
+regulator_service_types_014: 
+  id: "15"
+  regulator_description: Independent Health%Independ Health
+  internal_service_type_id: "3"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:57.413031
+  updated_at: 2010-09-27 23:59:57.413031
+regulator_service_types_015: 
+  id: "16"
+  regulator_description: Nurse Agencies%Nurse Agencies
+  internal_service_type_id: "3"
+  regulator_id: "3"
+  created_at: 2010-09-27 23:59:59.092609
+  updated_at: 2010-09-27 23:59:59.092609
+regulator_service_types_016: 
+  id: "1"
+  regulator_description: Care home only%Care Home
+  internal_service_type_id: "1"
+  regulator_id: "1"
+  created_at: 2010-09-27 19:48:43.118319
+  updated_at: 2010-09-27 19:48:43.118319
+regulator_service_types_017: 
+  id: "23"
+  regulator_description: Without Care at Home%Support Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.362394
+  updated_at: 2010-09-30 23:45:19.362394
+regulator_service_types_018: 
+  id: "24"
+  regulator_description: Adults%Care Home Service
+  internal_service_type_id: "1"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:19.51755
+  updated_at: 2010-09-30 23:45:19.51755
+regulator_service_types_019: 
+  id: "25"
+  regulator_description: Children and Young People%Care Home Service
+  internal_service_type_id: "1"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.223574
+  updated_at: 2010-09-30 23:45:20.223574
+regulator_service_types_020: 
+  id: "26"
+  regulator_description: Unknown%Offender Accommodation Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:20.505881
+  updated_at: 2010-09-30 23:45:20.505881
+regulator_service_types_021: 
+  id: "27"
+  regulator_description: Unknown%Secure Accommodation Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:45:28.600736
+  updated_at: 2010-09-30 23:45:28.600736
+regulator_service_types_022: 
+  id: "28"
+  regulator_description: Care at Home%Support Service
+  internal_service_type_id: "2"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:01.098701
+  updated_at: 2010-09-30 23:46:01.098701
+regulator_service_types_023: 
+  id: "29"
+  regulator_description: Unknown%Independent Health Care Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:06.048701
+  updated_at: 2010-09-30 23:46:06.048701
+regulator_service_types_024: 
+  id: "30"
+  regulator_description: Unknown%Nurse Agency
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:46:10.238897
+  updated_at: 2010-09-30 23:46:10.238897
+regulator_service_types_025: 
+  id: "31"
+  regulator_description: Unknown%Housing Support Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:47:04.522337
+  updated_at: 2010-09-30 23:47:04.522337
+regulator_service_types_026: 
+  id: "32"
+  regulator_description: Unknown%Adoption Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:27.67313
+  updated_at: 2010-09-30 23:48:27.67313
+regulator_service_types_027: 
+  id: "34"
+  regulator_description: Unknown%Fostering Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:55.870274
+  updated_at: 2010-09-30 23:48:55.870274
+regulator_service_types_028: 
+  id: "33"
+  regulator_description: Care at Home%Housing Support Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:48:28.322766
+  updated_at: 2010-09-30 23:48:28.322766
+regulator_service_types_029: 
+  id: "35"
+  regulator_description: Without Care at Home%Housing Support Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:34.522519
+  updated_at: 2010-09-30 23:49:34.522519
+regulator_service_types_030: 
+  id: "36"
+  regulator_description: Unknown%Adult Placement Service
+  internal_service_type_id: "3"
+  regulator_id: "2"
+  created_at: 2010-09-30 23:49:51.12495
+  updated_at: 2010-09-30 23:49:51.12495
+regulator_service_types_031: 
+  id: "37"
+  regulator_description: Adult Placement Agency (APA)%
+  internal_service_type_id: "3"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:27.526724
+  updated_at: 2010-10-01 20:27:27.526724
+regulator_service_types_032: 
+  id: "38"
+  regulator_description: Day Care Setting (DCS)%
+  internal_service_type_id: "3"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:27.944644
+  updated_at: 2010-10-01 20:27:27.944644
+regulator_service_types_033: 
+  id: "39"
+  regulator_description: Domiciliary Care Agency (DCA)%
+  internal_service_type_id: "2"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:31.567094
+  updated_at: 2010-10-01 20:27:31.567094
+regulator_service_types_034: 
+  id: "40"
+  regulator_description: Nursing Agency (NA)%
+  internal_service_type_id: "3"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:41.712732
+  updated_at: 2010-10-01 20:27:41.712732
+regulator_service_types_035: 
+  id: "41"
+  regulator_description: Nursing (NH)%
+  internal_service_type_id: "3"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:42.641662
+  updated_at: 2010-10-01 20:27:42.641662
+regulator_service_types_036: 
+  id: "42"
+  regulator_description: Residential (RC)%
+  internal_service_type_id: "1"
+  regulator_id: "4"
+  created_at: 2010-10-01 20:27:53.180194
+  updated_at: 2010-10-01 20:27:53.180194

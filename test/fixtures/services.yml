@@ -1,0 +1,31 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: "1"
+  date_started_trading: 2010-09-09
+  date_started_trading_implied: false
+  capacity: 1
+  description: MyText
+
+two:
+  id: "2"
+  date_started_trading: 2010-09-09
+  date_started_trading_implied: false
+  capacity: 1
+  description: MyText
+
+Care4U:
+  id: "3"
+  date_started_trading: 2010-09-09
+  date_started_trading_implied: false
+  description: We provide a fairly brilliant service
+  organisation_id: "5"
+  internal_service_type_id: "2"
+
+Carlton:
+  id: "4"
+  date_started_trading: 2010-09-09
+  date_started_trading_implied: false
+  description: We are quite great
+  organisation_id: "6"
+  internal_service_type_id: "2"

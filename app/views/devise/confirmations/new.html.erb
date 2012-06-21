@@ -1,0 +1,17 @@
+<%= form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, :class => "form form-horizontal" }) do |f| %>
+  <%= devise_error_messages! %>
+  <fieldset>
+  <legend>Resend confirmation instructions</legend>
+  <div class="control-group">
+    <%= f.label :email, :class => "control-label" %>
+    <div class="controls">
+      <%= f.text_field :email %>
+    </div>
+  </div>
+  </fieldset>
+  <div class="form-actions">
+  <%= f.submit "Resend confirmation instructions", :class => "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= render :partial => "devise/shared/links" %>

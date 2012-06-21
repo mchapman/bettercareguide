@@ -1,0 +1,22 @@
+<div class="well rating_disp" itemprop="reviews" itemscope itemtype="http://schema.org/Review">
+   <h3>Rated by <span itemprop="author"><%= rating.rater_type.short_description %></span>, <%= rating.rating_effective_from.strftime('%B %Y') %> </h3>
+   <meta itemprop="datePublished" content="<%= rating.rating_effective_from.strftime('%Y-%m-%d') %>">
+   <div class=row>
+      <div class="span1">
+        <div class="rating"><div style=<%= raw(sprintf('"width:%d%%"',rating.stars*20)) %>></div></div>
+        <meta itemprop="ratingValue" content="<%= rating.stars %>" />
+      </div>
+      <div class="span<%= max_span %> offset1" itemprop="reviewBody">
+        <%= rating.comments %>
+      </div>
+   </div>
+   <% unless rating.response_text.blank?  %>
+     <hr>
+     <div class=row >
+       <div class="span<% max_span %> offset1">
+         <h4><%= "Response from #{rating.response_user.full_name('Service Provider representative')}" %> </h4>
+         <%= rating.response_text %>
+       </div>
+     </div>
+   <% end %>
+</div>

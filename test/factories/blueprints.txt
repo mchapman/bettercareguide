@@ -1,0 +1,212 @@
+require 'machinist/active_record'
+
+AddressType.blueprint do
+  description { "address type #{sn}"}
+end
+
+Address.blueprint do
+  line1 { "#{sn} High Street"}
+  city { "Anytown "}
+  address_type_id { 1 }
+  country_id { 1 }
+end
+
+Country.blueprint do
+  name { "country #{sn}" }
+end
+
+#  create_table "employments", :force => true do |t|
+#    t.date     "start_date"
+#    t.date     "end_date"
+#    t.integer  "organisation_id"
+#    t.integer  "person_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  add_index "employments", ["organisation_id"], :name => "index_employments_on_organisation_id"
+#  add_index "employments", ["person_id"], :name => "index_employments_on_person_id"
+#
+#  create_table "internal_regulator_scores", :force => true do |t|
+#    t.string   "description", :limit => 45, :null => false
+#    t.float    "value",                     :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "internal_sector_types", :force => true do |t|
+#    t.string   "description", :limit => 45, :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "internal_service_types", :force => true do |t|
+#    t.string   "description",       :limit => 45, :null => false
+#    t.boolean  "requires_type_col"
+#    t.integer  "sort_order"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "organisations", :force => true do |t|
+#    t.string   "name",       :limit => 60,  :null => false
+#    t.string   "url",        :limit => 120
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "ownership_types", :force => true do |t|
+#    t.string   "description", :limit => 45, :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "ownerships", :force => true do |t|
+#    t.date     "start_date"
+#    t.date     "end_date"
+#    t.float    "share"
+#    t.integer  "owning_organisation_id"
+#    t.integer  "organisation_id"
+#    t.integer  "person_id"
+#    t.integer  "ownership_type_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  add_index "ownerships", ["organisation_id"], :name => "index_ownerships_on_organisation_id"
+#  add_index "ownerships", ["owning_organisation_id"], :name => "index_ownerships_on_owning_organisation_id"
+#  add_index "ownerships", ["person_id"], :name => "index_ownerships_on_person_id"
+#
+#  create_table "people", :force => true do |t|
+#    t.string   "family_name",  :limit => 45, :null => false
+#    t.string   "given_name",   :limit => 45
+#    t.string   "middle_names", :limit => 45
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+Permission.blueprint do
+  is_owner { "true" }
+  access_code { "12345" }
+  code_failures { "0" }
+  accepted { "false" }
+end
+#
+#
+#  create_table "phone_types", :force => true do |t|
+#    t.string   "description", :limit => 45, :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "phones", :force => true do |t|
+#    t.string   "number",          :limit => 15
+#    t.integer  "country_id",                    :null => false
+#    t.integer  "phone_type_id"
+#    t.integer  "address_type_id",               :null => false
+#    t.integer  "organisation_id"
+#    t.integer  "person_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  add_index "phones", ["organisation_id"], :name => "index_phones_on_organisation_id"
+#  add_index "phones", ["person_id"], :name => "index_phones_on_person_id"
+#
+#  create_table "public_scores_statuses", :force => true do |t|
+#    t.string   "description", :limit => 45
+#    t.boolean  "visible"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "rater_types", :force => true do |t|
+#    t.string   "description", :limit => 35, :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "rates", :force => true do |t|
+#    t.integer  "rater_id"
+#    t.integer  "rateable_id"
+#    t.integer  "stars",                   :null => false
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#    t.text     "comments"
+#    t.integer  "public_scores_status_id"
+#    t.datetime "response_required_by"
+#    t.integer  "next_rating"
+#    t.integer  "original_stars"
+#    t.integer  "rater_type_id"
+#  end
+#
+#  add_index "rates", ["rateable_id"], :name => "index_rates_on_rateable_id"
+#  add_index "rates", ["rater_id"], :name => "index_rates_on_rater_id"
+#
+#  create_table "regulator_scores", :force => true do |t|
+#    t.string   "regulator_description",       :null => false
+#    t.integer  "internal_regulator_score_id"
+#    t.integer  "regulator_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "regulator_sector_types", :force => true do |t|
+#    t.string   "regulator_description",   :limit => 120, :null => false
+#    t.integer  "regulator_id"
+#    t.integer  "internal_sector_type_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "regulator_service_types", :force => true do |t|
+#    t.string   "regulator_description",    :limit => 120, :null => false
+#    t.integer  "internal_service_type_id"
+#    t.integer  "regulator_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "regulators", :force => true do |t|
+#    t.string   "domain",          :limit => 100, :null => false
+#    t.string   "web_page_format", :limit => 120
+#    t.integer  "organisation_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  create_table "service_links", :force => true do |t|
+#    t.string   "url",              :null => false
+#    t.integer  "service_id",       :null => false
+#    t.integer  "user_id",          :null => false
+#    t.date     "publication_date"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  add_index "service_links", ["service_id"], :name => "index_service_links_on_service_id"
+#
+#  create_table "services", :force => true do |t|
+#    t.string   "regulator_service_ref",     :limit => 15
+#    t.date     "registration_date",                        :null => false
+#    t.boolean  "registration_date_implied"
+#    t.integer  "capacity"
+#    t.text     "description"
+#    t.string   "elevator_pitch",            :limit => 100
+#    t.integer  "regulator_service_type_id"
+#    t.integer  "regulator_sector_type_id"
+#    t.integer  "regulator_id"
+#    t.integer  "organisation_id"
+#    t.datetime "created_at"
+#    t.datetime "updated_at"
+#  end
+#
+#  add_index "services", ["organisation_id"], :name => "index_services_on_organisation_id"
+
+User.blueprint do
+  email { "anyone#{sn}@anywhere.com" }
+  password { "secret" }
+  password_confirmation { "#{object.password}" }
+  confirmed_at { "01 Jan 2010" }
+  roles_mask { "0" }
+end

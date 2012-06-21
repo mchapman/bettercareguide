@@ -1,0 +1,60 @@
+<% if @subtitle %>
+  <h2><%= @subtitle %></h2>
+<% end %>
+<div id="services" class="grid serv">
+<%= will_paginate @provlist %>
+<table summary="Service provider listing" class="table table-striped">
+  <tr>
+    <th scope="col">Service Provider</th>
+    <th scope="col" class="sqz2">Provider's Description</th>
+    <th scope="col">Phone</th>
+    <% if @needs_type_col %>
+      <th scope="col" class="sqz1">Service</th>
+    <% end %>
+    <th scope="col" class="sqz1">Home<br />Page</th>
+    <% if @distance_column == true %>
+      <th scope="col" class="rjust">Distance<br />(miles)</th>
+    <% end %>
+    <th scope="col">User<br />Feedback</th>
+  </tr>
+<% @provlist.each do |service| %>
+  <td><%= link_to service.name, service_path(service)  %></td>
+  <td class="sqz2"><%= service.elevator_pitch %></td>
+  <td><%= service.number %></td>
+  <% if @needs_type_col %>
+    <td class="sqz1"><%= InternalServiceType.get_description(service.internal_service_type_id) %></td>
+  <% end %>
+  <td width="4em" class="sqz1">
+    <% if service.url and service.url.length > 6 %>
+      <a href="<%= prepare_link(service.url) %>" target = "_blank" rel="nofollow"><i class="icon-home"></i></a>
+    <% end %>
+  </td>
+  <% if @distance_column == true %>
+  <td class="rjust"><%= sprintf("%0.01f",service.distance) %></td>
+  <% end %>
+  <td>
+  <% if service.no_comments == 0 %>
+  <%= link_to 'Be the first!', rate_service_url(service) %>
+  <% else %>
+  <div class="rating"><div style=<%= raw(sprintf('"width:%d%%"',service.cached_rating)) %>></div></div>
+  <%= link_to "(#{service.no_comments})", service_url(service, :anchor => "tabs-comments") %> <%= link_to 'Add', rate_service_url(service) %>
+  <% end %>
+  </td>
+  </tr>
+<% end %>
+</table>
+<%= will_paginate @provlist %>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $('tr').dblclick(function() {
+      var dest = ($('a',this).first().attr('href'));
+      if (dest !== undefined) { location.href = dest; }
+    });
+
+  });
+
+</script>

@@ -1,0 +1,19 @@
+Hello
+
+There has been a request to rescan the regulator site for:
+
+<%= raw @service.organisation.name %>
+
+<%= @service.organisation.registered_address.line1 %>
+<%= @service.organisation.registered_address.line2 %>
+<%= @service.organisation.registered_address.line3 %>
+<%= @service.organisation.registered_address.city %>
+<%= @service.organisation.registered_address.state %>
+<%= @service.organisation.registered_address.postal_zip_code %>
+
+Tel: <%= @service.organisation.registered_address_landline.number %>
+
+Please do it and then send an email to <%= @email %>
+
+<%= EMAIL_SIG %>
+

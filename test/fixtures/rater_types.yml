@@ -1,0 +1,31 @@
+--- 
+rater_types_001: 
+  id: "1"
+  short_description: Service User
+  long_description: someone who uses the service
+  created_at: 
+  updated_at: 
+rater_types_002: 
+  id: "2"
+  short_description: Family of Service User
+  long_description: a family member of someone who uses the service
+  created_at: 
+  updated_at: 
+rater_types_003: 
+  id: "3"
+  short_description: Employee
+  long_description: employed by the service provider
+  created_at: 
+  updated_at: 
+rater_types_004: 
+  id: "4"
+  short_description: Care Professional
+  long_description: a care professional working alongside the service provider
+  created_at: 
+  updated_at: 
+rater_types_005: 
+  id: "5"
+  short_description: Other
+  long_description: some other connection to provider (specify in comments)
+  created_at: 
+  updated_at: 

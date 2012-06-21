@@ -1,0 +1,113 @@
+<%= render :partial => 'layouts/pictures' %>
+<div class="span8">
+  <%= form_for @rating, :html => { :class => 'form-horizontal' } do |f| %>
+    <fieldset>
+      <legend><%= controller.action_name.capitalize %> Rating</legend>
+
+      <div class="control-group">
+        <%= f.label :rater_id, :class => 'control-label' %>
+        <div class="controls">
+          <%= render :partial => 'shared/rater', :locals => {:rating => @rating} %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :service_id, :class => 'control-label' %>
+        <div class="controls">
+          <%= service_display(@rating) %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :stars, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.stars %>
+        </div>
+      </div>
+
+      <% if @rating.ivr_session %>
+        <div class="control-group">
+          <%= f.label :recording_url, :class => 'control-label' %>
+          <div class="controls">
+            <%= link_to "Name", @rating.name_recording_url, :target => '_blank', :class => 'text_field' %>&nbsp;&nbsp;&nbsp;
+            <%= link_to "Listen", @rating.recording_url, :target => '_blank', :class => 'text_field' %>
+          </div>
+        </div>
+      <% end %>
+
+      <div class="control-group">
+        <%= f.label :comments, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.comments %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :response_required_by, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.response_required_by %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :rater_type_id, :class => 'control-label' %>
+        <div class="controls">
+          <%=  rater_type_description(@rating) %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :status_mask, :class => 'control-label' %>
+        <div class="controls">
+          <%= sprintf('%09s',@rating.status_mask.to_s(2)).gsub(' ','0') %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :effective_date, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.effective_date %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :creation_ip_address, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.creation_ip_address %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :response_text, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.response_text %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :response_ip_address, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.response_ip_address %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :response_datetime, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.response_datetime %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <%= f.label :response_user_id, :class => 'control-label' %>
+        <div class="controls">
+          <%= @rating.response_user_id ? @rating.response_user.full_name('') : "" %>
+        </div>
+      </div>
+
+    </fieldset>
+  <% end %>
+<div class="form-actions">
+  <%= link_to 'Back', ratings_path, :class => 'btn'  %>
+</div>
+</div>

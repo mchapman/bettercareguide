@@ -1,0 +1,10 @@
+<div class="organisation">
+  <h3>
+    <%= link_to organisation.name, organisation %>
+    <%= organisation.url %>
+  </h3>
+  <div class="actions">
+    <%= link_to "Edit", edit_organisation_path(organisation) %> |
+    <%= link_to "Destroy", organisation,  :data => { :confirm => 'Are you sure?' }, :method => :delete %>
+  </div>
+</div>

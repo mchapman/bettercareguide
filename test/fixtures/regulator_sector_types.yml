@@ -1,0 +1,64 @@
+--- 
+regulator_sector_types_001: 
+  id: "1"
+  regulator_description: Voluntary
+  regulator_id: "1"
+  internal_sector_type_id: "6"
+  created_at: 2010-09-27 19:48:43.167853
+  updated_at: 2010-09-27 19:48:43.167853
+regulator_sector_types_002: 
+  id: "2"
+  regulator_description: Private
+  regulator_id: "1"
+  internal_sector_type_id: "7"
+  created_at: 2010-09-27 19:48:43.380953
+  updated_at: 2010-09-27 19:48:43.380953
+regulator_sector_types_003: 
+  id: "3"
+  regulator_description: Charity
+  regulator_id: "1"
+  internal_sector_type_id: "8"
+  created_at: 2010-09-27 19:48:43.414708
+  updated_at: 2010-09-27 19:48:43.414708
+regulator_sector_types_004: 
+  id: "4"
+  regulator_description: Other
+  regulator_id: "1"
+  internal_sector_type_id: "9"
+  created_at: 2010-09-27 19:48:43.54425
+  updated_at: 2010-09-27 19:48:43.54425
+regulator_sector_types_005: 
+  id: "5"
+  regulator_description: National Health Service
+  regulator_id: "1"
+  internal_sector_type_id: "10"
+  created_at: 2010-09-27 19:48:44.658398
+  updated_at: 2010-09-27 19:48:44.658398
+regulator_sector_types_006: 
+  id: "6"
+  regulator_description: NHS
+  regulator_id: "1"
+  internal_sector_type_id: "11"
+  created_at: 2010-09-27 19:48:50.793429
+  updated_at: 2010-09-27 19:48:50.793429
+regulator_sector_types_007: 
+  id: "7"
+  regulator_description: Local Authority
+  regulator_id: "1"
+  internal_sector_type_id: "12"
+  created_at: 2010-09-27 19:49:16.816698
+  updated_at: 2010-09-27 19:49:16.816698
+regulator_sector_types_008: 
+  id: "8"
+  regulator_description: Unknown
+  regulator_id: "2"
+  internal_sector_type_id: "13"
+  created_at: 2010-09-30 23:45:19.374649
+  updated_at: 2010-09-30 23:45:19.374649
+regulator_sector_types_009: 
+  id: "9"
+  regulator_description: Unknown
+  regulator_id: "4"
+  internal_sector_type_id: "14"
+  created_at: 2010-10-01 20:27:27.577406
+  updated_at: 2010-10-01 20:27:27.577406

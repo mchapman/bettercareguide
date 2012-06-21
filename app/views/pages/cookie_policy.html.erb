@@ -1,0 +1,67 @@
+<%= render :partial => 'layouts/pictures' %>
+<div class="span8">
+  <h1>Do we use cookies?</h1>
+<p>Your Internet browser has a feature called "cookies" which store small amounts of data on your computer about your visit to the Website, in particular when you complete the search boxes on our homepage to indicate your areas of interest. You do not need to have cookies turned on to visit most of the Website. A cookie does not provide us with any personal information. Therefore, if you have not supplied us with any personal information, you can still browse our site anonymously.</p>
+<p>If you chose to log in to the site, and remain logged in, then an encrypted cookie will be used to store your login details.</p>
+<p>We do not automatically capture or store personal data from browsers to the site, other than to log your IP address and session information such as the duration of the visit to our site and the nature of the browser used. This information is used only for administration of the site system and in the compilation of statistics used by Us.</p>
+<p>Cookies may be required to allow you to access and participate in certain areas of the Website. Once you have closed your browser, this type of cookie is deactivated.</p>
+<p>The majority of browsers will allow you to alter the settings used for cookies and to disable and enable them as you require. If you do not want cookies then please refer to the help menu on your browser for instructions on disabling them. For further general information on cookies and more detailed advice on how to disable and enable them please go to
+  <%= link_to 'allaboutcookies.org', 'http://www.allaboutcookies.org', {:target => "_blank", :rel => "nofollow"} %> or
+  <%= link_to 'the Information Commissioner''s Office.', 'http://www.ico.gov.uk/for_the_public/topic_specific_guides/online/cookies.aspx', {:target => "_blank", :rel => "nofollow"} %></p>
+
+ <h3>Cookie Details</h3>
+ <table class="table table-striped">
+   <thead>
+      <tr>
+        <th>Name</th>
+        <th>Purpose</th>
+        <th>Activated</th>
+        <th>Duration</th>
+      </tr>
+   </thead>
+   <tbody>
+   <tr>
+     <td>_bc_session</td>
+     <td>To store session variables such as whether you are logged in, and as whom</td>
+     <td>On visit</td>
+     <td>Browser Session</td>
+   </tr>
+   <tr>
+     <td>remember_user_token</td>
+     <td>To remember the login details for future sessions</td>
+     <td>On login, if the "Remember Me" checkbox is checked</td>
+     <td>2 weeks</td>
+   </tr>
+   <tr>
+     <td>eucookie</td>
+     <td>To signify that the EU cookie legislation warning has been acknowledged</td>
+     <td>On clicking the "I'm fine with this" button on the cookie warning section of any page</td>
+     <td>10 years</td>
+   </tr>
+   <tr>
+     <td>_utma</td>
+     <td>Part of Google Analytics (a service we use to see how many users visit our site). This cookie is typically written to the browser upon the first visit to our site from that web browser. If the cookie has been deleted by the browser operator, and the browser subsequently visits our site, a new __utma cookie is written with a different unique ID. This cookie is used to determine unique visitors to our site and it is updated with each page view. Additionally, this cookie is provided with a unique ID that Google Analytics uses to ensure both the validity and accessibility of the cookie as an extra security measure.</td>
+     <td>The first visit to our site</td>
+     <td>2 years</td>
+   </tr>
+   <tr>
+     <td>_utmb</td>
+     <td>Part of Google Analytics (a service we use to see how many users visit our site). This cookie is used to establish and continue a user session with our site. When a user views a page on our site, the Google Analytics code attempts to update this cookie. If it does not find the cookie, a new one is written and a new session is established. Each time a user visits a different page on our site, this cookie is updated to expire in 30 minutes, thus continuing a single session for as long as user activity continues within 30-minute intervals. This cookie expires when a user pauses on a page on our site for longer than 30 minutes.</td>
+     <td>Every time a page is visited</td>
+     <td>30 minutes<td>
+   </tr>
+   <tr>
+     <td>_utmc</td>
+     <td>Part of Google Analytics (a service we use to see how many users visit our site). This cookie operates in conjunction with the __utmb cookie to determine whether or not to establish a new session for the user. In particular, this cookie is not provided with an expiration date, so it expires when the user exits the browser. Should a user visit our site, exit the browser and then return to your website within 30 minutes, the absence of the __utmc cookie indicates that a new session needs to be established, despite the fact that the __utmb cookie has not yet expired.</td>
+     <td>Every time a page is visited</td>
+     <td>Browser Session<td>
+   </tr>
+   <tr>
+     <td>_utmz</td>
+     <td>Part of Google Analytics (a service we use to see how many users visit our site). This cookie stores the type of referral used by the visitor to reach our site, whether via a direct method, a referring link, a website search, or a campaign such as an ad or an email link. It is used to calculate search engine traffic, ad campaigns and page navigation within our own site. The cookie is updated with each page view to our site.</td>
+     <td>Every Time a page is visited</td>
+     <td>6 months</td>
+   </tr>
+   </tbody>
+ </table>
+</div>

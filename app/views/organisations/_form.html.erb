@@ -1,0 +1,61 @@
+<%= form_for(@organisation) do |f| %>
+  <% if @organisation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@organisation.errors.count, "error") %> prohibited this organisation from being saved:</h2>
+
+      <ul>
+      <% @organisation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <%= f.fields_for :addresses do |addr_form| %>
+    <% if @organisation.addresses.count != 1 %>
+      <div class="field">
+        <%= addr_form.label :address_type_id %>
+        <%= addr_form.collection_select(:address_type_id, AddressType.all, :id, :description, {:prompt => true}) %>
+      </div>
+    <% end %>
+    <div class="field">
+      <%= addr_form.label :line1, AddressesHelper.local_field_name(0) %>
+      <%= addr_form.text_field :line1 %>
+    </div>
+    <div class="field">
+      <%= addr_form.label :line2, AddressesHelper.local_field_name(1) %>
+      <%= addr_form.text_field :line2 %>
+    </div>
+    <div class="field">
+      <%= addr_form.label :line3, AddressesHelper.local_field_name(2) %>
+      <%= addr_form.text_field :line3 %>
+    </div>
+    <div class="field">
+      <%= addr_form.label :city, AddressesHelper.local_field_name(3) %>
+      <%= addr_form.text_field :city %>
+    </div>
+    <div class="field">
+      <%= addr_form.label :state, AddressesHelper.local_field_name(4) %>
+      <%= addr_form.text_field :state %>
+    </div>
+    <div class="field">
+      <%= addr_form.label :postal_zip_code, AddressesHelper.local_field_name(5) %>
+      <%= addr_form.text_field :postal_zip_code %>
+    </div>
+
+<% #= addr_form.label :country_id %>
+<% #= addr_form.collection_select(:country_id, Country.all, :id, :name, {:prompt => true}) %>
+
+  <% end %>
+  <div class="field">
+    <%= f.label :url, 'URL' %>
+    <%= f.text_field :url %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

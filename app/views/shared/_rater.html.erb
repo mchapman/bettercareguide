@@ -1,0 +1,5 @@
+<% if rating.rater_id %>
+  <%= rating.rater.full_name(:email) %>
+<% else %>
+  <%= rating.phone %>
+<% end %>

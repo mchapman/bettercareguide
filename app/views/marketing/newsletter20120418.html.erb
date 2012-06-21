@@ -1,0 +1,63 @@
+<div style="color: #222">
+    <p>Hi</p>
+
+    <p>Just a quick update about <a href="www.bettercareguide.org">Better Care Guide</a>.  Since the launch just over a month ago
+    we have attracted a lot of interest from providers and some (but not enough, yet) from service users.  We have made a few changes that
+    will hopefully begin to address that and this newsletter is to tell you about some of them.</p>
+
+    <h2>"Review by Phone" trial</h2>
+    <p>There are two main difficulties with having a review site for elderly care and support:</p>
+    <ul>
+      <li>People tend not to sample many providers, like they might for B&Bs or restaurants</li>
+      <li>Many of the target reviewers don't have access to the web</li>
+    </ul>
+    <p>We can't do anything about the first, but we are pleased to announce that we have started a trial to address the second.  The idea is that
+    service users dial 020 3322 2611 from their landline and answer the prompts.  They chose the service by typing in the phone number - make
+    sure they use the number on the site if that is not the
+    same as the one they normally call.  They will probably find it easiest if they prepare their review (of up to 60 seconds) before they make the call.</p>
+
+    <h2>Textile markup language</h2>
+    <p>We have introduced a way for registered providers to add some formatting to the text they can enter about their service, using a subset of a simple
+    markup language called <strong>textile</strong>.  This is very easy - if you are interested have a look at
+    <%= link_to('an example of a service with a textile markup description.','http://www.bettercareguide.org/services/48787') %>.</p>
+
+    <h2>Search Engine Optimisation</h2>
+    <p>Obviously there is no point in having a website if people don't visit it, and the easiest way to get people to visit is
+    by making sure they find your site when using SEO - Search Engine Optimisation.  We have made some improvements in that area (the service URLs are the most visible)
+    and there is more to come.</p>
+    <p>A useful add on to the site, which would probably improve search results positioning, would be some news content on the home page, which most of the
+    other sites seems to source directly and without attribution from other sources (the Telegraph mostly, it seems).  If anyone knows of a free
+    source of appropriate content that isn't in breach of copyright please let me know.</p>
+
+    <p>Almost of the changes above have been suggested by users, and even if they were already on the list having the feedback from
+    users helps us to prioritise - so please keep those ideas coming (visit our <%= link_to 'support site','http://support.reallycare.org/' %> or use
+    my contact details at the bottom).</p>
+
+    <h2>Get notified of bad reviews</h2>
+    <p>One of the unique features of Better Care Guide is the ability to be informed when your service receives a bad review, and even to have a chance
+    to reply before the review is published.  Obviously you hope that you
+    will not get bad reviews, but a lot of the comments on the web are about how
+    vulnerable providers are to a single poor review from a disgruntled employee.  Just in case this happens to your organisation make sure you
+    <%= link_to 'set up your service', 'http://www.bettercareguide.org/pages/provider_guide#user-setup' %> to take advantage of this feature (we have
+    noticed that several of you have not).</p>
+
+    <h2>Get your good reviews noticed</h2>
+    <p>Once you have have collected good reviews on the site you can draw attention to them by including a link from your site to your service's
+    page on the Better Care Guide.  Those who have already done this do <strong>not</strong> need to worry about the change in URL format -
+    incoming links will be preserved.</p>
+
+    <h2>We need your help</h2>
+    <p>ReallyCare CIC (the company behind BetterCareGuide) is a not-for-profit company founded with the aim of improving care and support by using open
+    technologies: open formats, open data and open source software. There are a large number of similar sites to BetterCareGuide around who are not
+    necessarily focused on the same objectives.  We believe that an efficient care market in the future will depend on
+    openness, and the time to ensure that the e-market place where <em>you</em> may be buying <em>your</em> care when you are old offers the
+    best picture of the market is now.</p>
+
+    <p>If you share these values and concerns then probably the biggest way you can help BetterCareGuide is to tell your service users about it,
+    and get them to review your service.  And on the assumption that you will be telling service users who you know will be happy you will be
+    helping yourselves too!</p>
+
+    <p>We would also be grateful if you could "like" us on Facebook and/or Tweet about us - there are links on the
+    <%= link_to 'home page', 'http://www.bettercareguide.org' %> (they zoom in after a few seconds).</p>
+</div>
+<%= render :partial => "shared/mailing_sig" %>

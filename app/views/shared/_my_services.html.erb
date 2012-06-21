@@ -1,0 +1,16 @@
+<h2>My
+<%= my_services.length == 1 ? "Service" : "Services" %>
+</h2>
+<table class="table">
+  <tr>
+    <th>Service Name</th>
+    <th></th>
+  </tr>
+
+<% my_services.each do |perm| %>
+  <tr>
+    <td><%= perm.service.organisation.name %></td>
+    <td><%= link_to 'Edit Service', edit_service_path(perm.service), :class => "btn btn-mini" %></td>
+  </tr>
+<% end %>
+</table>

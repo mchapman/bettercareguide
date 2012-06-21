@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Service:</b>
+  <%= @permission.service_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @permission.user_id %>
+</p>
+
+<p>
+  <b>Is owner:</b>
+  <%= @permission.is_owner %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @permission.notes %>
+</p>
+
+<p>
+  <b>Accepted:</b>
+  <%= @permission.accepted %>
+</p>
+
+<p>
+  <b>Access code:</b>
+  <%= @permission.access_code %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @permission.code_failures %>
+</p>
+
+
+<%= link_to 'Edit', edit_permission_path(@permission) %> |
+<%= link_to 'Back', permissions_path %>

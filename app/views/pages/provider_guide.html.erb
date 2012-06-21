@@ -1,0 +1,114 @@
+<%= render :partial => 'layouts/pictures' %>
+<div class="span10">
+  <h1>A quick start for providers</h1>
+
+  <p>Better Care Guide is a social care provider comparison web site run by a not for profit company.  All regulated care at home services and residential homes in the UK are on the site.  Providers can register for free and this offers a number of advantages to them:</p>
+  <ul>
+    <li>providers can enter an ‘elevator pitch’ that appears on the listings page</li>
+    <li>they can enter a full description of the business that appears on the service page</li>
+    <li>they are informed as soon as someone comments on their service, with the option to respond to less favourable comments before they are published (within certain timescales)</li>
+    <li>they can ensure that contact details are kept up to date</li>
+    <li>the URL of their page on the site will be submitted to search engines (subject to submission rate limits)</li>
+  </ul>
+
+  <h3>Registration</h3>
+
+  <p>Click on the Register link at the top right hand corner of the screen (circled in red).</p>
+  <%= image_tag("register1.jpg", :width => "80%") %>
+
+  <p>This brings up the registration screen:</p>
+  <%= image_tag("register2.jpg", :width => "80%") %>
+  <p>If you have one, use your work email address to register.  This makes the process of validating that you have a right to update the provider record completely automatic.  Don’t worry if you don’t have a work email address - go ahead and use your hotmail / gmail or whatever - it just means you have an extra step later.</p>
+  <p>Once you have clicked on the register button check your email - within a few minutes there will be an email from the site (we do this to make sure you are who you claim to be).  This email will contain a link - click on it and you will be signed in to the site.</p>
+
+  <h3>Searching for your service</h3>
+
+  <p>On the site home page make sure the relevant care setting is selected (top highlight in screenshot)</p>
+  <%=  image_tag("find_service.jpg", :width => "80%") %>
+  <p>and enter at least part of your organisations name (bottom highlight).  Then click on <%= image_tag("search.jpg") %>
+
+  <p>If you have entered enough of a name to identify your organisation uniquely then you will go straight to the service page - otherwise you will see a list of all possible matches.  Click on the underlined name of your service to go to the service page.  If there are too many matches you can return to the home page and add your location to the search to narrow things down.</p>
+
+  <p id="before-linking">If you run a regulated service and can’t find it on our site (but you can find it on the relevant regulator website) then please <a href="/pages/contact">contact us.</a></p>
+
+  <h3>Linking your account to your service</h3>
+
+  <p>At the bottom of the service page you will find a link: <%= link_to "Click here if you represent this service", '#before-linking' %>.  Click on it.  At this stage one of two things will happen:</p>
+  <ol>
+  <li>If the system can see that you work for the service from your email address and the registered website for the service then you will see a page which starts with <em>“Your request to update the record for <strong>#Service Name#</strong> has been accepted and you can start straight away”</em></li>
+
+    OR
+  <li>You will be taken to a page where various options are available to you to validate that you work for the service.  All of them result in you being sent a short code.  Once you have the code visit your dashboard.<br /><%=  image_tag("dashboard.jpg", :width=> "45%") %><br />and click on the <%= link_to 'Enter access code link', '#before-linking' %> you will see there.</li>
+  </ol>
+
+  <h3>Adding / Changing details</h3>
+
+  <p>From your Dashboard<br /><%=  image_tag("dashboard.jpg", :width=> "45%") %><br />follow the link to <%=  link_to 'Edit Service', '#before-linking' %> .  There are three tabs: Address, Enhancements and Users.</p>
+  <%= image_tag("address_tab.jpg", :width => "80%") %>
+  <h4>Address</h4>
+  <p>Initially the address tab is populated from data sourced from the regulator.  If the data is incorrect you need to do two things:<p>
+  <ol>
+    <li>Correct the data on the site and click</li>
+    <li>Inform the regulator that their records are out of date.  The Better Care Guide will honour your changes the next time it refreshes the database, in preference to the regulator data, but the regulator data is the source for several websites.</li>
+  </ol>
+
+  <h4>Enhancements</h4>
+
+  <p>This tab allows you to “pitch” your service to site visitors.  Currently there are two areas where you can enter text:</p>
+  <ol>
+    <li>The Summary pitch is where you can enter a very short (150 characters) message that will appear in search results<br /><%=  image_tag("enhanced_listing.jpg", :width => "80%") %></li>
+    <li>The Full description is an unlimited length field - what you put in here will appear on your service page (the one with the map).</li>
+  </ol>
+
+  <h4 id="user-setup">Users</h4>
+  <p>The Users tab is where you can set up the system to inform you of new reviews for your service (which it does by default) and allow you to comment on reviews before they are published (which requires some set up).</p>
+  <p>Each user who is associated with the service has a row in the table with the following options:</p>
+  <table class="table">
+    <tr><th>Admin?</th><td>If ticked, this user can update the options on the Users tab</td></tr>
+    <tr><th>Email new ratings?</th><td>If ticked, this user will be sent an email every time a review of the service is posted</td></tr>
+    <tr><th>Invite comment on ratings?</th><td>If ticked, this user will be sent an email when an unfavourable (see belows for details) of the service is proposed.  This email will contain a link that will allow them
+      to comment on the review.  When they save their comment the review and their response are published.  If no response is made within 72 hours the review is published without a response.</td></tr>
+    <tr><th>Notify of Good Care Guide review?</th><td>If ticked, this user will be emailed whenever we detect that the service has a new review on Good Care Guide.</td></tr>
+    <tr><th>Obsolete</th><td>If ticked, the user no longer has any rights over this service and will not be able to access this page.</td></tr>
+  </table>
+
+  <p>An unfavourable review is one that has a number less than or equal to the number of stars specified in the control at the bottom of the page:</p>
+  <%= image_tag("invite_comments.jpg", :width => "30%") %>
+  <p>For example with the setup pictured a 4* or 5* review would be published immediately, and a 1*, 2* or 3* review would not be published until the provider had been given the chance to comment.</p>
+
+  <h3>Getting Reviews</h3>
+
+  <p>Now you are all set up the next thing you need to do is get some good reviews!
+
+  <!--<h4>Getting reviews from service users who don't have internet access</h4>-->
+
+  <!--<strong>This service is on trial and may be withdrawn without warning</strong>-->
+
+  <!--<p>Get your service user to call 020 3322 2611 from a landline and follow the prompts.   They chose the service by typing in the phone number - make-->
+    <!--sure they use the number on the BetterCareGuide site if that is not the same as the one they normally call if they need to speak to you.-->
+    <!--They will probably find it easiest if they prepare their review (of up to 60 seconds) before they make the call.</p>-->
+
+  <!--<h4>Getting reviews from service users who do have access to the internet</h4>-->
+
+  <p>First you need to figure out what link you need to send.  To do this visit your service page (the one with the map) and note down the part of what appears in the address box with lots of - characters in it
+    (in the example below, which is how it appears in the Chrome browser, it would be <strong>caremark-rother-bexhill-on-sea-home-care</strong>).</p>
+  <%= image_tag("address_bar.jpg", :width => "60%") %>
+  <p>The link you need to send your users or their relatives is</p>
+  <p><strong>http://www.bettercareguide.org/ratings/<em style="color: #aaa">your-service-string-from-url</em>/prepare</strong></p>
+  <p>So if your string was ###-##-## you might send an email like:</p>
+  <div class="row">
+    <div class="span4 offset1" style="font-style: italic;">
+    <p>Dear John</p>
+
+    <p>Thank you for your nice comments about our service the last time we spoke.  I was wondering if you would be prepared to repeat them in a review on a new website?  If so please visit the address below in your web browser and fill in the simple form.</p>
+
+    <p><b>http://www.bettercareguide.org/ratings/</b>###-##-##<b>/prepare</b></p>
+
+    <p>Thanks very much in advance,</p>
+    </div>
+  </div>
+
+  <p>Of course some of your users may not be satisfied, and if that is the case their feedback could be very valuable to improving your organisation.  We recommend that you put the link on all feedback forms and surveys that you conduct.</p>
+
+  <p>If you have any questions please <a href="/pages/contact">contact us.</a></p>
+</div>

@@ -1,0 +1,40 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Rater</th>
+    <th>Service</th>
+    <th>Stars</th>
+    <% if allow_edit %>
+      <th>Status</th>
+    <% end %>
+    <th>Created at</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% ratings.each do |rating| %>
+    <tr>
+      <td><%= link_to rating.id, "/ratings/#{rating.id}" %></td>
+      <td><%= render :partial => 'shared/rater', :locals => {:rating => rating} %></td>
+      <td>
+        <% if rating.service_id.blank? %>
+          (empty)
+        <% else %>
+          <%= link_to rating.service.organisation.name, "/services/#{rating.service_id}" %></td>
+        <% end %>
+        <td><%= rating.stars %></td>
+        <% if allow_edit %>
+          <td><%= sprintf('%09s',rating.status_mask.to_s(2)).gsub(' ','0') %></td>
+        <% end %>
+        <td><%= rating.created_at.strftime('%e/%m/%y %H:%M') %></td>
+        <td>
+          <% if allow_edit %>
+            <%= link_to 'Edit', edit_rating_path(rating), :class => 'btn btn-mini' %>
+          <% end %>
+          <%= link_to 'Delete', rating_path(rating), :method => :delete,  :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-mini btn-danger' %>
+        </td>
+        </tr>
+  <% end %>
+  </tbody>
+</table>

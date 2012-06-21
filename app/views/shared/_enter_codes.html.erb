@@ -1,0 +1,18 @@
+<h2>Access
+<%= permissions.length == 1 ? "Code" : "Codes" %>
+not yet entered</h2>
+<table class="table">
+  <tr>
+    <th>Service Name</th>
+    <th class="sqz1">When Requested</th>
+    <th></th>
+  </tr>
+
+<% permissions.each do |permission| %>
+  <tr>
+    <td><%= permission.service.organisation.name %></td>
+    <td class="sqz1"><%= permission.created_at.strftime('%d %b %Y  %H:%M') %></td>
+    <td><%= link_to 'Enter access code', enter_code_path(permission), :class => "btn btn-mini" %></td>
+  </tr>
+<% end %>
+</table>

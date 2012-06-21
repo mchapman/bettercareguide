@@ -1,0 +1,85 @@
+<% content_for(:head) do %>
+<%= javascript_include_tag 'home/service_home.js' %>
+<% end %>
+
+<%= render :partial => 'layouts/pictures' %>
+<div class="span8">
+  <%= form_tag '/services/search', :method => :get, :class => "well form-horizontal caresrch" do %>
+    <div class="row">
+      <div class="span7 offset1">
+        <div class="control-group">
+        <label class="control-label">Search for care : </label>
+        <div class="controls">
+          <label class="checkbox">
+            <%= check_box_tag('dom','dom',@dom) %> at home
+          </label>
+          <label class="checkbox">
+            <%= check_box_tag('res','res',@res) %> in a residential home
+          </label>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="radius">
+        within
+        </label>
+        <div class="controls">
+        <%= number_field_tag 'radius', @radius, {:step => 5, :min => 5, :max => 50, :class => "span1"} %> miles
+        </div>
+        <label class="control-label" for="geog">
+        of
+        </label>
+        <div class="controls">
+          <%= text_field_tag 'geog', @geog, {"data-default" => ServicesController::DEFAULT_GEOG_MESSAGE, :class => 'clear', :maxlength => 60} %>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <label class="control-label" for="provider">
+          Provider name
+        </label>
+        <div class="controls">
+          <%= text_field_tag 'provider', @provider, {"data-default" => ServicesController::DEFAULT_PROVIDER_MESSAGE, :class => 'clear'} %>
+        </div>
+      </div>
+
+      <%= hidden_field_tag 'lat', @lat %>
+      <%= hidden_field_tag 'lng', @lng %>
+
+      </div>
+    </div>
+    <div class="row">
+      <div style="width: 100px; margin-left:auto; margin-right: auto">
+        <%= submit_tag "Search", :name => nil, :id => "submit", :class => "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+  <div class="hero-unit" style="position:relative;">
+    <div id="sm-btn" style="height:20px; top: 10px; right: 10px; position: absolute; z-index: -1">
+      <div id="fb-root"></div>
+      <div class="fb-like" data-href="http://www.bettercareguide.org" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+      <a href="https://twitter.com/share" class="twitter-share-button pull-left" data-url="http://www.bettercareguide.org" data-text="Find and comment on better adult social care provision throughout the UK" data-via="reallycare_mark" data-hashtags="bettercareguide">Tweet</a>
+    </div>
+
+    <h1><%= SITE_TITLE %></h1>
+    <p>allows members of the public to search for better care providers, and comment on adult social care providers they have experience of.  It is the first site to do this for the whole of the UK.  It is run by ReallyCare CIC, a not-for-profit company.</p>
+    <p>Providers should have a look at our <%= link_to "quick start guide", url_for(provider_guide_url) %>.</p>
+  </div>
+</div>
+
+<div class="span2 siteintro">
+  <h2>New!</h2>
+  <p>
+    We are currently trialling <strong>"review by phone"</strong>.  Simply call 020 3322 2611 from a landline and follow the prompts.  You will need the telephone number of the service you are reviewing.
+  </p>
+  <hr>
+  <p>
+    We hope you find <span class="sitetitle"><%= SITE_TITLE %></span> useful.  It is one of the first projects from
+    <span class="rc">ReallyCare CIC,</span> a not-for-profit company set up to encourage and facilitate
+    better practice in social care provision through the use of open source software and open data.
+  </p>
+  <p>
+    Although <span class="rc">ReallyCare</span> is a not-for-profit company we have running costs like everyone
+    else and we would appreciate <%= link_to "contributions.", "http://pledgie.com/campaigns/16900",  {:target => "_blank"}  %>
+  </p>
+</div>

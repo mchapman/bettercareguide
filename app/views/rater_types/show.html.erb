@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Short Description:</b>
+  <%= @rater_type.short_description %>
+</p>
+<p>
+  <b>Long Description:</b>
+  <%= @rater_type.long_description %>
+</p>
+
+<%= link_to 'Edit', edit_rater_type_path(@rater_type) %> |
+<%= link_to 'Back', rater_types_path %>
